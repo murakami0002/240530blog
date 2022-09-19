@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+
+<meta charset="utf-8">
+     <link rel="stylesheet" href="/static/css/introduce.css">
+
+</head>
+
+<body>
+
+<div style="text-align: center">
+  <img src="{% static 'media_local/Image.jpg'%}" width="500" height="300">
+</div>
+
+<h1>Introduce</h1>
+<h2>identify</h2>
+
+<p>ニックネーム: murasan<br>
+
+</p>
+
+<h2>free</h2>
+<p>
+一言：自由気ままに
+</p>
+
+<h2>base_data</h2>
+<p>
+誕生日：1990年10月<br>
+性別：男<br>
+趣味：将棋、サッカー、Youtube観賞<br>
+特技：なし<br>
+</p>
+
+<h2>work</h2>
+<p>
+今のお仕事：社内インフラ整備<br>
+仕事上の出来ること：社内インフラ構築、生産技術<br>
+職歴：生産技術職、社内インフラ<br>
+</p>
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

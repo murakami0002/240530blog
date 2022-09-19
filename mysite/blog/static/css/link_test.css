@@ -1,0 +1,11 @@
+
+.example{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background: #cfe3f0;
+
+}
+.example span{
+    margin-left: 10px;
+}

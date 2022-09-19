@@ -1,0 +1,290 @@
+/**
+ * レイアウト用ボックスを囲む
+ */
+.container {
+    width: 960px;       /* サイトの基本となる横幅 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
+    margin-left: auto;  /* 左側の余白を自動で調整 */
+}
+
+/* ボックスの構造を分かりやすくするため */
+.layout {
+    background-color: #dedede;
+    padding: 10px;
+    border: 1px solid #949494;
+    margin-bottom: 10px;
+}
+
+/* メインコンテンツ */
+.main {
+    float: left;
+    width: 630px;
+}
+
+/* サイドバー */
+.sidebar {
+    float: right;
+    width: 250px;
+}
+
+/* クリアフィックス */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------------------
+ * ヘッダー
+ * --------------------------
+ */
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+header p span {
+    font-size: 20px;
+    font-weight: bold;
+}
+header {
+    height: 100px;
+    margin-top: 8px;
+}
+header p {
+    font-size: 12px;
+}
+.description {
+    margin-bottom: 10px;
+}
+
+/* --------------------------
+ * ナビゲーション
+ * --------------------------
+ */
+nav ul li {
+    float: left;
+    width: 18%;
+    text-align: center;
+    font-size:16px
+}
+nav {
+    border-top: 2px solid #16a765;
+    border-bottom: 1px solid #ccc;
+}
+nav ul li a:hover {
+    color: #fff;
+    background-color: #16a765;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #16a765;
+}
+nav ul li a {
+    display: block;
+    padding: 15px;
+    border-left: 1px dotted #D6D6D6;
+
+}
+nav ul li:last-child {
+    border-right: 1px dotted #D6D6D6;
+}
+nav ul .active a {
+    color: #fff;
+    background-color: #16a765;
+    border-bottom: 1px solid #16a765;
+    margin-bottom: -1px;
+}
+
+/* --------------------------
+ * メイン画像
+ * --------------------------
+ */
+.main-img  {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display:flex;
+
+}
+.main-img p  {
+    font-size:48px;
+    vertical-align:middle;
+    padding:70px 0;
+
+}
+
+/* --------------------------
+ * ボタン
+ * --------------------------
+ */
+.button {
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: #16a765;
+}
+.button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* --------------------------
+ * 見出し
+ * --------------------------
+ */
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-top: 2px solid #16a765;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+}
+
+/* --------------------------
+ * フッター
+ * --------------------------
+ */
+.footer-left {
+    float: left;
+    width: 300px;
+    margin-left: 40px;
+}
+.footer-right {
+    float: right;
+    width: 600px;
+}
+footer ul li {
+    float: left;
+    margin-bottom: 10px;
+    padding: 0 7px 0 8px;
+    font-size: 11px;
+    border-right: 1px solid #b6b6b6;
+}
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    margin: 20px 0;
+}
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-logo {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------
+ * PRエリア
+ * --------------------------
+ */
+.pr-area {
+    margin-bottom: 10px;
+}
+.pr-area li {
+    float: left;
+    margin: 0 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.pr-area li h2 {
+    border-left: 5px solid #16a765;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding-left: 10px;
+}
+.pr-area .shadow {
+    width: 100%;
+    overflow: hidden;
+
+}
+.pr-area .shadow:hover {
+    opacity: 0.6;
+}
+.pr-area .trim-img {
+    width: 100%;
+    overflow: hidden;
+}
+.pr-area p {
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 5px;
+}
+.pr-area a p:hover {
+    color: #16a765;
+    text-decoration: underline;
+}
+
+/* --------------------------
+ * ブログ
+ * --------------------------
+ */
+.blog {
+    margin-bottom: 50px;
+}
+.blog p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.blog li {
+    border-bottom: 1px dotted #ddd;
+    padding: 15px 5px;
+}
+.blog .blog-img {
+    float: left;
+}
+.blog .blog-img:hover {
+    opacity: 0.8;
+}
+.blog .blog-info {
+    margin-left: 115px;
+}
+.blog .blog-info h3 a {
+    color: #16a765;
+    font-size: 18px;
+    font-weight: bold;
+}
+.blog .blog-info h3 a:hover {
+    text-decoration: underline;
+}
+.blog .blog-info span {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.blog .blog-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* --------------------------
+ * SNSリスト
+ * --------------------------
+ */
+.share {
+    margin-bottom: 50px;
+}
+.share ul {
+    border-top: 1px dotted #ddd;
+}
+.share ul li {
+    border-bottom: 1px dotted #ddd;
+}
+.share ul li a {
+    display: block;
+    text-align: center;
+}
+.share ul li a:hover {
+    background-color: #eee;
+    opacity: 0.8;
+}
+

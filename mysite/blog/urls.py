@@ -19,6 +19,14 @@ urlpatterns = [
     #URLに数字を入力する→urlpatternsと一致する引数を探す→隣の関数を呼び出す→関数内の動作を実施する
     #path('<int:pk>/results/',views.ResultsView.as_view(),name='results'),
     #path('<int:question_id>/vote/',views.vote,name='vote'),
-    #path('123',views.test,name='test'),
-
+    path('what_life',views.whatlife,name='what_life'),
+    path('life_summary',views.life_summary,name='life_summary'),
+    path('tsukkomi',views.tsukkomi,name='tsukkomi'),
+    path('trivia_summary',views.trivia_summary,name='trivia_summary'),
+    path('trivia_rich',views.trivia_rich,name='trivia_rich'),
+    path('trivia_athlete_rich',views.trivia_athlete_rich,name='trivia_athlete_rich'),
+    path('trivia_artist_rich',views.trivia_artist_rich,name='trivia_artist_rich'),
+    path('trivia_soccer_goal',views.trivia_soccer_goal,name='trivia_soccer_goal'),
+    path('trivia_comedian',views.trivia_comedian,name='trivia_comedian'),
+    path('party_game',views.party_game,name='party_game'),
 ]

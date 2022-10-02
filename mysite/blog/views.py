@@ -148,3 +148,42 @@ def test(request):
     template_name="blog/test.html"
     return render(request,template_name)"""
 
+def whatlife(request):
+    template_name="blog/life_what's life.html"
+    return render(request,template_name)
+
+def life_summary(request):
+    template_name="blog/life_summary.html"
+    return render(request,template_name)
+
+def trivia_summary(request):
+    template_name="blog/trivia_summary.html"
+    return render(request,template_name)
+
+def tsukkomi(request):
+    template_name="blog/tsukkomi.html"
+    return render(request,template_name)
+
+def trivia_rich(request):
+    template_name="blog/trivia_rich.html"
+    return render(request,template_name)
+
+def trivia_athlete_rich(request):
+    template_name="blog/trivia_athlete_rich.html"
+    return render(request,template_name)
+
+def trivia_artist_rich(request):
+    template_name="blog/trivia_comedian.html"
+    return render(request,template_name)
+
+def trivia_soccer_goal(request):
+    template_name="blog/trivia_soccer_goal.html"
+    return render(request,template_name)
+
+def trivia_comedian(request):
+    template_name="blog/trivia_comedian.html"
+    return render(request,template_name)
+
+def party_game(request):
+    template_name="blog/party_game.html"
+    return render(request,template_name)

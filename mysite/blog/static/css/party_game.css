@@ -1,0 +1,50 @@
+
+.box11,.box12,.box13,.box14,.box15{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+ol.list2 {
+  max-width: 17em;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  counter-reset: li;
+  border: solid 3px #00b5ad;
+}
+
+ol.list2 li {
+  position: relative;
+  margin: 0.9em 0 0.9em 3.8em;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
+  color: #333;
+}
+
+ol.list2 li::before {
+  position: absolute;
+  top: 50%;
+  left: -3em;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  content: counter(li);
+  counter-increment: li;
+  background: #00b5ad;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

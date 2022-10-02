@@ -1,0 +1,28 @@
+
+@charset "utf-8";
+
+.l_toc{
+  border: double 2px ;
+  box-shadow: 0 10px 10px rgba(5, 0, 0,0.5);
+  padding-right: 30px;
+  max-width: 500px;
+
+}
+
+h2{
+  background-color: #CCCCCC;
+}
+
+
+h3{
+  border-bottom:solid;
+  border-color:#CCCCCC;
+  border-width:5px;
+
+}
+"""h3{
+ """ text-decoration:underline;
+ """ text-decoration-color: #CCCCCC;
+ """ text-border-width:10px;
+
+"""}

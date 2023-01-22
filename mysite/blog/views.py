@@ -187,3 +187,71 @@ def trivia_comedian(request):
 def party_game(request):
     template_name="blog/party_game.html"
     return render(request,template_name)
+
+def trivia_baseball_homerun(request):
+    template_name="blog/trivia_baseball_homerun.html"
+    return render(request,template_name)
+
+def trivia_potatochips(request):
+    template_name="blog/trivia_potatochips.html"
+    return render(request,template_name)
+
+def trivia_population(request):
+    template_name="blog/trivia_population.html"
+    return render(request,template_name)
+
+def diary_230110(request):
+    template_name="blog/diary_230110.html"
+    return render(request,template_name)
+
+def diary_summary(request):
+    template_name="blog/diary_summary.html"
+    return render(request,template_name)
+
+def diary_230114(request):
+    template_name="blog/diary_230114.html"
+    return render(request,template_name)
+
+def diary_230115(request):
+    template_name="blog/diary_230115.html"
+    return render(request,template_name)
+
+def humor_ladytalk(request):
+    template_name="blog/humor_ladytalk.html"
+    return render(request,template_name)
+
+def humor_summary(request):
+    template_name="blog/humor_summary.html"
+    return render(request,template_name)
+
+def humor_busaiku(request):
+    template_name="blog/humor_busaiku.html"
+    return render(request,template_name)
+
+def humor_party(request):
+    template_name="blog/humor_party.html"
+    return render(request,template_name)
+
+def humor_smart(request):
+    template_name="blog/humor_smart.html"
+    return render(request,template_name)
+
+def humor_macchan(request):
+    template_name="blog/humor_macchan.html"
+    return render(request,template_name)
+
+def humor_propose(request):
+    template_name="blog/humor_propose.html"
+    return render(request,template_name)
+
+def humor_nickname(request):
+    template_name="blog/humor_nickname.html"
+    return render(request,template_name)
+
+def humor_yourself(request):
+    template_name="blog/humor_yourself.html"
+    return render(request,template_name)
+
+def humor_positive(request):
+    template_name="blog/humor_positive.html"
+    return render(request,template_name)

@@ -1,51 +1,56 @@
 {% load static %}
-<link rel="stylesheet" href="/static/css/main.css?v=3">
+<link rel="stylesheet" href="/static/css/main.css?v=8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css" >
 
 <div class="container">
     <div>
         <header class="clearfix">
-            <div class="company-info">
-                <a href="index.html">
-                    <h1>murachan note</h1>
-                </a>
+　　　　　　　　　　
+                    <h1>ユーモアな館</h1>
+                    <p>読めば「ユーモア溢れる人」になれるブログです。</p>
+            <div class="title">
+            <img src="{% static 'media_local/main.jpg'%}" width="300" height="150">
             </div>
         </header>
     </div>
-    <div>
+    <hr class="hr_stripe">
+　    <div>
         <nav>
             <ul class="clearfix">
-                <li><a href="">Top page</a></li>
-                <li><a href="humor_summary">humor</a></li>
-                <li><a href="life_summary">Life</a></li>
-                <li><a href="trivia_summary">Trivia</a></li>
-                <li><a href="diary_summary">Diary</a></li>
+                <li><a href="{% url 'blog:index' %}">表紙</a></li>
+                <li><a href="humor_summary">ユーモア語録</a></li>
+                <li><a href="life_summary">ユーモア小道具</a></li>
+                <li><a href="trivia_summary">ユーモア豆知識</a></li>
+                <li><a href="diary_summary">ユーモア日記</a></li>
             </ul>
         </nav>
     </div>
     <div>
         <div class="main-img">
-            <img src="{% static 'media_local/Image.jpg'%}" width="500" height="300">
-　　　　　　　<p>Life to enjoy</p>
-        </div>
+            <img src="{% static 'media_local/Image.jpg'%}" width="800" height="250">
+　　　　　　　<p>ユーモア(humor)とは・・・<br>人間生活に滲み出るおかしみ。上品なおしゃれ。人生の矛盾・滑稽等を、人間共通の弱点として寛大な態度で眺め楽しむ気持。</p>
+
+            <p></div>
     </div>
+
     <div class="clearfix">
         <div class="main">
             <div class="pr-area">
                 <ul class="clearfix">
                     <li>
-                        <h2>humor</h2>
+                        <h2>ユーモア語録</h2>
                         <a href="service.html">
                             <div class="shadow">
                             <img src="{% static 'media_local/laught.jpg'%}" alt="" width="100%">
                             </div>
                         </a>
                         <a href="service.html">
-                            <p>直ぐ使えるギャグ、面白い返し、ツッコミなどのまとめ</p>
+                            <p>ユーモア溢れるギャグ、面白い返し、ツッコミなど。</p>
                         </a>
                         <a class="button" href="service.html">一覧を確認する</a>
                     </li>
                     <li>
-                        <h2>Life</h2>
+                        <h2>ユーモア小道具</h2>
                         <a href="company.html">
                             <div class="shadow">
                                 <div class="trim-img">
@@ -54,12 +59,12 @@
                             </div>
                         </a>
                         <a href="company.html">
-                            <p>世知辛い世の中、人生を明るくする考え方のまとめ</p>
+                            <p>世知辛い世の中。人生を明るくするユーモアな考え方。</p>
                         </a>
                         <a class="button" href="company.html">一覧を確認する</a>
                     </li>
                     <li>
-                        <h2>Trivia</h2>
+                        <h2>ユーモア豆知識</h2>
                         <a href="contact.html">
                             <div class="shadow">
                                 <div class="trim-img">
@@ -67,80 +72,44 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="contact.html"><p>自分の技術でお金を稼ぐ</p></a>
+                        <a href="contact.html"><p>ユーモアな人は雑学あります。</p></a>
                         <a class="button" href="contact.html" >一覧を確認する</a>
                     </li>
                     <li>
-                        <h2>diary</h2>
+                        <h2>ユーモア日記</h2>
                         <a href="contact.html">
                             <div class="shadow">
                                 <div class="trim-img">
-                                    <img src="{% static 'media_local/nostalgia.jpg'%}" alt="" width="100%">
+                                    <img src="{% static 'media_local/nostalgia.jpg'%}" alt="" width="105%">
                                 </div>
                             </div>
                         </a>
-                        <a href="contact.html"><p>不細工サラリーマンの日記</p></a>
+                        <a href="contact.html"><p>徒然日記</p></a>
                         <a class="button" href="contact.html" >一覧を確認する</a>
                     </li>
                 </ul>
             </div>
+</div>
+<div class="sidebar">
+    <p>🌀ユーモアな商材🌀</p>
 
-            <div class="blog">
-                <h2 class="heading">ブログ</h2>
-                <ul>
-                    <li class="clearfix">
-                        <div class="blog-img">
-                            <a href="blog_entry.html">
-                                <img src="/sample/images/0004.jpg" width="100" height="100">
-                            </a>
-                        </div>
-                        <div class="blog-info">
-                            <h3>
-                                <a href="blog_entry.html"></a>
-                            </h3>
-                            <span>2015年6月11日</span>
-                            <p></p>
-                            <a class="button" href="blog_entry.html">記事を読む</a>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="blog-img">
-                            <a href="blog_entry.html">
-                                <img src="/sample/images/0005.jpg" width="100" height="100">
-                            </a>
-                        </div>
-                        <div class="blog-info">
-                            <h3>
-                                <a href="blog_entry.html"></a>
-                            </h3>
-                            <span>2014年8月13日</span>
-                            <p></p>
-                            <a href="blog_entry.html" class="button">記事を読む</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="sidebar">
-            <aside class="share">
-                <ul>
-                    <li>
-                        <p>閲覧Ranking</p>
-                        <a href="#">
-                            <img src="{% static 'media_local/ranking.jpg'%}" alt="" width="100%">
-                        </a>
 
-                    </li>
-                    <li>
-                        <p>最近の投稿</p>
-                        <a href="#">
-                            <img src="{% static 'media_local/resent.jpg'%}" alt="" width="100%">
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        </div>
-    </div>
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kosupure55/cabinet/sp09/spd_1564973611973_0.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F" rel="nofollow">面白い コスプレ ハロウィン フライドポテト 着ぐるみ おもしろ コスチューム ポテト 衣装 おもしろい 仮装</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/oilhonpo/cabinet/06366786/imgrc0070117066.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F" rel="nofollow">送料無料 ぬいぐるみ 人形 抱き枕 男の子 昼休みクッション 面白いぬいぐるみ 大きい クリスマス お誕生日 記念日 プレゼント お祝い 飾り物 撮影道具 ギフト100cm</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8381/9784537218381_1_3.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F" rel="nofollow">眠れなくなるほど面白い 図解 世界史 世界史の流れとつながり 地理・出来事がまるわかり！ [ 鈴木 旭 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+　
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/dear-book/cabinet/nonst0432/b09pfzt8dg00.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F" rel="nofollow">ナイトライト 授乳ライト ベッドサイドランプ キウイ鳥 口でコントロール 間接照明 USB充電式 タイマー機能 暖光&amp;白い光 無段階輝度調節 面白いデザイン 目に優しい 可愛い 寝室 テーブ...</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    　　　　
+
+</div>
+</div>
+
     <div>
         <footer>
             <div class="clearfix">
@@ -169,4 +138,5 @@
             <p class="copyright"></p>
         </footer>
     </div>
+</div>
 </div>

@@ -1,17 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="/static/css/trivia_summary.css?20221025">
+<link rel="stylesheet" href="/static/css/humor_summary.css?v=8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css" >
+
     <title>Title</title>
 </head>
 <body>
 <div class="container">
 
-  <div class="card-media">
+    <nav>
+  <a href="{% url 'blog:index' %}">表紙</a>
+  <a href="humor_summary">ユーモア語録</a>
+  <a href="life_summary">ユーモア小道具</a>
+  <a href="trivia_summary">ユーモア豆知識</a>
+  <a href="diary_summary">ユーモア日記</a>
+  <div class="animation start-home"></div>
+    </nav>
+
+    <div>
+        <header class="clearfix">
+　　　　　　　　　　
+                    <h1>ユーモアな館</h1>
+                    <p>読めば「ユーモア溢れる人」になれるブログです。</p>
+            <div class="title">
+            <img src="{% static 'media_local/main.jpg'%}" width="300" height="150">
+            </div>
+        </header>
+    </div>
+    <hr class="hr_stripe">
+　
+<h2>ユーモア豆知識</h2>
+
+    <div class="clearfix">
+        <div class="main">
+            <div class="pr-area">
+<div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/rich.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -27,7 +55,7 @@
   <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/comedian.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -44,7 +72,7 @@
     <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/sport.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -60,7 +88,7 @@
       <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/soccer.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -76,7 +104,7 @@
         <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+     <div class="card-media-object" style="background-image: url(../static/media_local/homerun.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -92,7 +120,7 @@
    <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+     <div class="card-media-object" style="background-image: url(../static/media_local/potatochips.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -108,7 +136,7 @@
     <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+   <div class="card-media-object" style="background-image: url(../static/media_local/world.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -121,9 +149,56 @@
     </div>
         </div>
 
+            </div>
+    </div>
+<div class="sidebar">
+    <p>🌀ユーモアな商材🌀</p>
+
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kosupure55/cabinet/sp09/spd_1564973611973_0.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F" rel="nofollow">面白い コスプレ ハロウィン フライドポテト 着ぐるみ おもしろ コスチューム ポテト 衣装 おもしろい 仮装</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/oilhonpo/cabinet/06366786/imgrc0070117066.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F" rel="nofollow">送料無料 ぬいぐるみ 人形 抱き枕 男の子 昼休みクッション 面白いぬいぐるみ 大きい クリスマス お誕生日 記念日 プレゼント お祝い 飾り物 撮影道具 ギフト100cm</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8381/9784537218381_1_3.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F" rel="nofollow">眠れなくなるほど面白い 図解 世界史 世界史の流れとつながり 地理・出来事がまるわかり！ [ 鈴木 旭 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+　
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/dear-book/cabinet/nonst0432/b09pfzt8dg00.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F" rel="nofollow">ナイトライト 授乳ライト ベッドサイドランプ キウイ鳥 口でコントロール 間接照明 USB充電式 タイマー機能 暖光&amp;白い光 無段階輝度調節 面白いデザイン 目に優しい 可愛い 寝室 テーブ...</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    　　　　
 
 </div>
+</div>
 
+    <div>
+        <footer>
+            <div class="clearfix">
+                <div class="footer-left">
+                    <a href="index.html">
+                        <h1 class="footer-logo">Introduce</h1>
+                    </a>
+
+                    <p>生息地：静岡県</p>
+                    <p>あだ名：むらさん</p>
+                    <p>趣味：特に無し</p>
+                    <p>普段考えていること：家族の幸せ</p>
+                    <p>一言：Life to enjoy</p>
+                </div>
+
+                <div class="footer-right">
+                    <ul class="clearfix">
+                        <li><a href="index.html"></a></li>
+                        <li><a href="service.html"></a></li>
+                        <li><a href="company.html"></a></li>
+                        <li><a href="blog.html"></a></li>
+                        <li><a href="contact.html"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright"></p>
+        </footer>
+    </div>
+</div>
 
 </body>
-</html>

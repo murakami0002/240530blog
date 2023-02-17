@@ -1,17 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="/static/css/humor_summary.css?20221025">
+<link rel="stylesheet" href="/static/css/humor_summary.css?v=8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css" >
+
     <title>Title</title>
 </head>
 <body>
 <div class="container">
 
-  <div class="card-media">
+    <nav>
+  <a href="{% url 'blog:index' %}">表紙</a>
+  <a href="humor_summary">ユーモア語録</a>
+  <a href="life_summary">ユーモア小道具</a>
+  <a href="trivia_summary">ユーモア豆知識</a>
+  <a href="diary_summary">ユーモア日記</a>
+  <div class="animation start-home"></div>
+    </nav>
+
+    <div>
+        <header class="clearfix">
+　　　　　　　　　　
+                    <h1>ユーモアな館</h1>
+                    <p>読めば「ユーモア溢れる人」になれるブログです。</p>
+            <div class="title">
+            <img src="{% static 'media_local/main.jpg'%}" width="300" height="150">
+            </div>
+        </header>
+    </div>
+    <hr class="hr_stripe">
+　
+<h2>ユーモア語録</h2>
+
+    <div class="clearfix">
+        <div class="main">
+            <div class="pr-area">
+
+ <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/busaiku.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -20,14 +49,17 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_busaiku">3連休最後の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_busaiku">ブスと言われたときのユーモアな返し7選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
 
-  <div class="card-media">
+
+ <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/woman.jpg"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -36,15 +68,34 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_ladytalk">休日出勤＆共通テスト</a></span>
+      <span class="card-media-body-heading"><a href="humor_ladytalk">女性と話す時のネタ20選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
 
+   <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/party.jpg);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="humor_party">合コンで面白い人になれるボケ10選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
 
-    <div class="card-media">
+ <div class="card-media">
     <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/ikemen.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -53,28 +104,16 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_party">一人の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_smart">モテる男の条件7選</a></span>
+       <div class="card-media-body-supporting-bottom">
     </div>
   </div>
-  <div class="card-media">
-    <!-- media container -->
-    <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
-    </div>
-    <!-- body container -->
-    <div class="card-media-body">
-      <div class="card-media-body-top">
-        <span class="subtle">Mon, APR 09, 7:00 PM</span>
-        <div class="card-media-body-top-icons u-float-right">
-        </div>
-      </div>
-      <span class="card-media-body-heading"><a href="humor_smart">一人の休日</a></span>
-    </div>
   </div>
+
   <div class="card-media">
       <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/funny.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -83,29 +122,16 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_macchan">一人の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_macchan">私が選ぶ松本人志の名言集</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
 
-    <div class="card-media">
-      <!-- media container -->
-    <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
-    </div>
-    <!-- body container -->
-    <div class="card-media-body">
-      <div class="card-media-body-top">
-        <span class="subtle">Mon, APR 09, 7:00 PM</span>
-        <div class="card-media-body-top-icons u-float-right">
-        </div>
-      </div>
-      <span class="card-media-body-heading"><a href="humor_propose">一人の休日</a></span>
-    </div>
-  </div>
    <div class="card-media">
       <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/propose.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -114,13 +140,34 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_nickname">一人の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_propose">ユーモアなプロポーズの言葉7選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
+
+   <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/nickname.jpg);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="humor_nickname">ユーモアなあだな11選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
      <div class="card-media">
       <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/yourself.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -129,13 +176,16 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_yourself">一人の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_yourself">ユーモアな第二人称の呼び方8選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
+
        <div class="card-media">
       <!-- media container -->
     <div class="card-media-object-container">
-      <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+      <div class="card-media-object" style="background-image: url(../static/media_local/brokenheart.jpg);"></div>
     </div>
     <!-- body container -->
     <div class="card-media-body">
@@ -144,9 +194,163 @@
         <div class="card-media-body-top-icons u-float-right">
         </div>
       </div>
-      <span class="card-media-body-heading"><a href="humor_positive">一人の休日</a></span>
+      <span class="card-media-body-heading"><a href="humor_positive">女性に振られても前向きになれる考え方5選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
     </div>
   </div>
+
+  <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/smile.jpg);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="humor_life">人生を楽しくする方法7選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
+    <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/soccerball.png);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="humor_soccer_tsukkomi">サッカー中に使えるユーモアなツッコミ集</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
+      <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/baseball.png);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="humor_baseball_tsukkomi">野球中に使えるユーモアなツッコミ集</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
+        <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/10.jpg);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="trivia_game">合コンで盛り上がるゲーム5厳選</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
+          <div class="card-media">
+      <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(../static/media_local/greatman.jpg);"></div>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+        <div class="card-media-body-top-icons u-float-right">
+        </div>
+      </div>
+      <span class="card-media-body-heading"><a href="trivia_greatman">偉人達の名言</a></span>
+      <div class="card-media-body-supporting-bottom">
+       </div>
+    </div>
+  </div>
+
+            </div>
+    </div>
+<div class="sidebar">
+    <p>🌀ユーモアな商材🌀</p>
+
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F14601210%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F18305818%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4006/9784909044006.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F14601210%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F18305818%252F" rel="nofollow">大切なことに気づく365日名言の旅 [ ライツ社 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15257633%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F18900277%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3009/9784479393009.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15257633%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F18900277%252F" rel="nofollow">マンガでわかる！10代に伝えたい名言集 [ 定政敬子 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16542986%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20200931%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2800/9784865812800.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16542986%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20200931%252F" rel="nofollow">文豪の名句名言事典 身につけたい教養の極み [ 山口謠司 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+　
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F12600256%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F16745207%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4616/9784479304616.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F12600256%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F16745207%252F" rel="nofollow">心にジーンと響く108の名言 （だいわ文庫） [ 竹内政明 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    　　　　
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16453878%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20127178%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6238/9784184116238.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16453878%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20127178%252F" rel="nofollow">悩める教師のためのポジティブ・マインドセット 名言に学ぶ！ [ 山根修 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F17315234%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20797024%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8269/9784382158269.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F17315234%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20797024%252F" rel="nofollow">新装第二版 マーフィー名言集 あなたを成功へ導く568のことば [ しまず こういち ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16626185%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20271064%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8017/9784396318017.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16626185%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20271064%252F" rel="nofollow">言葉なんかで人生なんて変わらないと思っているあなたに　名言サプリ （祥伝社黄金文庫） [ 西沢泰生 ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00qzls4.2bo11a7c.g00qzls4.2bo1262b%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fauc-taiyou-sya%252F4582486015724%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fauc-taiyou-sya%252Fi%252F10015035%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-taiyou-sya/cabinet/goroku/top-2/4582486015724.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00qzls4.2bo11a7c.g00qzls4.2bo1262b%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fauc-taiyou-sya%252F4582486015724%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fauc-taiyou-sya%252Fi%252F10015035%252F" rel="nofollow">【 おもしろ プレゼント 】おもしろtシャツ 俺流総本家 魂心Tシャツ 死ぬ事以外はかすり傷【 tシャツ 長袖 おもしろ雑貨 文字Tシャツ おもしろ メッセージ 文字tシャツ 長袖 ジョークTシャツ 日本エッセイスト 山崎 拓巳 名言系】</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
 </div>
+</div>
+
+    <div>
+        <footer>
+            <div class="clearfix">
+                <div class="footer-left">
+                    <a href="index.html">
+                        <h1 class="footer-logo">Introduce</h1>
+                    </a>
+
+                    <p>生息地：静岡県</p>
+                    <p>あだ名：むらさん</p>
+                    <p>趣味：特に無し</p>
+                    <p>普段考えていること：家族の幸せ</p>
+                    <p>一言：Life to enjoy</p>
+                </div>
+
+                <div class="footer-right">
+                    <ul class="clearfix">
+                        <li><a href="index.html"></a></li>
+                        <li><a href="service.html"></a></li>
+                        <li><a href="company.html"></a></li>
+                        <li><a href="blog.html"></a></li>
+                        <li><a href="contact.html"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright"></p>
+        </footer>
+    </div>
+</div>
+
 </body>
-      </html>

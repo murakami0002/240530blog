@@ -1,47 +1,119 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="/static/css/humor_smart.css?v=9">
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="/static/css/humor_smart.css?2224">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" >
     <title>モテる男の条件7選</title>
 </head>
-
-
 <body>
 
-<article>
-<h1>モテる男の条件7選/h1>
+<div class="container">
+
+<nav>
+  <a href="humor_summary">Humor</a>
+  <a href="humor_summary">Top Page</a>
+  <a href="life_summary">Life</a>
+  <a href="trivia_summary">Trivia</a>
+  <a href="diary_summary">Diary</a>
+  <div class="animation start-home"></div>
+</nav>
+
+
+ <div class="main-img">
+            <img src="{% static 'media_local/Image.jpg'%}"width="100%">
+    　　　　<h1>モテる男の条件7選</h1>
+　　　　　　　<p>Hello</p>
+        </div>
+
+
+
+
+
+
 <p>皆さんこんちには、murachanです。</p>
 
 <p>今日は、地球上の男性が誰しも知りたい「モテる男の条件」をまとめてみました。
 女性からモテるよう参考にして下さい。</p>
-    <ol>
-        <li>清潔感<br>
-             例：肌が綺麗（赤ちゃん肌）,爪がきれい,ムダ毛が薄い,髪がセットされている,色白,黒髪短髪,衣服、靴が汚れていない,臭くない</li>
-        <li>ユーモアがある<br>
-             例：私生活についてあまり話さない,普段何をしているか謎,どんな人か知りたい気持ちになる,がっつかない</li>
-        <li>聞き上手<br>
-             例：相手の話を聞き入れる,否定的でなく肯定的,自分の話にすり替えない,頷き相づちをする。</li>
-        <li>話しが面白い<br>
-            例：自虐ネタ,ツッコミを入れる,相手を笑顔にさせる</li>
-        <li>余裕がある<br>
-            例：お金に余裕がある,終電を気遣う,店員にやさしい,下ネタに走らない,お酒を飲ませようとしない,怒らない</li>
-        <li>趣味のハードルが高くない<br>
-             例：映画鑑賞、ラーメン巡り、お寺周り、食べ歩き、ドライブ、ショッピング</li>
-        <li>一生懸命なことがある<br>
-            例：仕事を頑張っている、スポーツを頑張っている、歌を頑張っている、叶えたい夢がある</li>
-    </ol>
 
-<div class="footer01">
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/1.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">清潔感</h2>
+            <p class="card-description">例：肌が綺麗（赤ちゃん肌）,爪がきれい,ムダ毛が薄い,髪がセットされている,色白,黒髪短髪,衣服、靴が汚れていない,臭くない</p>
+        </div>
+    </div>
+</a>
 
-  <p class="copyright">
-    &copy; My Site
-  </p>
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/2.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">ユーモアがある</h2>
+            <p class="card-description">例：私生活についてあまり話さない,普段何をしているか謎,どんな人か知りたい気持ちになる,がっつかない</li>
+        </p>
+        </div>
+    </div>
+</a>
+
+ <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">聞き上手</h2>
+            <p class="card-description">例：相手の話を聞き入れる,否定的でなく肯定的,自分の話にすり替えない,頷き相づちをする。</li>
+       </p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">話しが面白い</h2>
+            <p class="card-description">例：自虐ネタ,ツッコミを入れる,相手を笑顔にさせる</p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">裕がある</h2>
+            <p class="card-description">例：お金に余裕がある,終電を気遣う,店員にやさしい,下ネタに走らない,お酒を飲ませようとしない,怒らない</li>
+      </p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/6.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">趣味のハードルが高くない</h2>
+            <p class="card-description">例：映画鑑賞、ラーメン巡り、お寺周り、食べ歩き、ドライブ、ショッピング</li>
+       </p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/7.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">一生懸命なことがある</h2>
+            <p class="card-description">例：仕事を頑張っている、スポーツを頑張っている、歌を頑張っている、叶えたい夢がある</li>
+</p>
+        </div>
+    </div>
+</a>
 </div>
-    </article>
+
+
 </body>
-
-
-
-</html>
+      </html>

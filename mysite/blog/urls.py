@@ -8,6 +8,7 @@ app_name='blog'
 #他のアプリで
 urlpatterns = [
     path('',views.IndexView.as_view(),name='index'),
+    #path('top_page',views.top_page,name='top_page'),
     #pathは関数、path(URL,関数またはクラス、name=URL名称）
     #nameで指定したURL名称は主に以下３つのパターンで使用される。
     #name関数を使うメリットはURLを変更しても、他ファイルの変更必要なし

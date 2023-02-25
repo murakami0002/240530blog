@@ -21,11 +21,16 @@ from django.shortcuts import render
 
 
 class IndexView(generic.ListView):
-    template_name = 'blog/Work.html'
+    template_name = "blog/Work.html"
     context_object_name='latest_question_list'
 
     def get_queryset(self):
         return Question.objects.order_by('-pub_date')[:5]
+
+
+"""def top_page(request):
+    template_name="Work.html"
+    return render(request,template_name)"""
 
 def trivia_greatman(request):
     template_name="blog/trivia_greatman.html"

@@ -25,7 +25,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('blog/', include('blog.urls')),
+    path('', include('blog.urls')),
     #include関数は、呼び出すURLの共通部分を省略可能にする。
     #例：path('URL共通部分',include(省略可能とするファイル名)
     path('admin/', admin.site.urls),

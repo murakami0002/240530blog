@@ -1,0 +1,504 @@
+
+/**
+ * レイアウト用ボックスを囲む
+ */
+.container {
+    width: 960px;       /* サイトの基本となる横幅 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
+    margin-left: auto;  /* 左側の余白を自動で調整 */
+}
+
+/* メインコンテンツ */
+.main {
+    float: left;
+    width: 500px;
+    margin: 0;
+}
+
+/* サイドバー */
+.sidebar {
+    float: right;
+    width: 250px;
+    font-family: "Hannari";
+
+}
+
+
+
+/*説明文*/
+.main-under {
+font-size:20px;
+
+}
+
+/*目次*/
+.contents ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  width:50%;
+}
+.contents ol li {
+  padding: 0.5em 0;
+  position: relative;
+  padding-left: 1.4em;
+  line-height: 1.5em;
+  font-size:20px;
+}
+.contents ol li:before{
+  counter-increment: number;
+  content: counter(number) ".";
+  position: absolute;
+  left: 0;
+  font-family: 'Bradley Hand','Segoe Script','Segoe Print',sans-serif;/*手書き風のフォント*/
+  font-size: 1.3em;/*フォントサイズ*/
+}
+
+.contents p{
+  font-family:'Bradley Hand','Segoe Script','Segoe Print',sans-serif;/*手書き風のフォント*/
+  font-size: 1.3em;/*フォントサイズ*/
+ }
+/*見出しh2*/
+
+.head_test {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    font-size:  24px;           /* 文字サイズ指定 */
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #feeaac;  /* 背景色指定 */
+    padding:  10px;             /* 余白指定 */
+    margin-bottom: 15px;        /* 周りの余白指定 */
+    border-radius:  2px;        /* 角丸指定 */
+}
+p {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    line-height: 2;             /* 行間調整 */
+}
+.head_test:before {
+    content:  '';               /* 空白の要素を作る */
+    background-color: #b3b3b3;  /* 背景色指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    left: 50%;                  /* 位置調整 */
+    height: 60%;                /* 高さ指定 */
+    top: 26%;                   /* 位置調整 */
+    z-index:  -1;               /* 重なり調整 */
+    width: 50%;                 /* 幅指定 */
+    box-shadow: 0 0 8px 10px #b3b3b3;/* 影指定 */
+    transform: rotate(3deg);    /* 回転 */
+}
+
+/* 区切り線*/
+
+.cp_hr10 {
+	height: 5px;
+	border-width: 0;
+	background-image: -webkit-linear-gradient(right,
+	#c2185b 0px,#c2185b 5px,#1976d2 5px,#1976d2 10px,
+	#388e3c 10px,#388e3c 15px,#fbc02d 15px,#fbc02d 20px,
+	#e64a19 20px,#e64a19 25px);
+	background-image:         linear-gradient(-90deg,
+	#c2185b 0px,#c2185b 5px,#1976d2 5px,#1976d2 10px,
+	#388e3c 10px,#388e3c 15px,#fbc02d 15px,#fbc02d 20px,
+	#e64a19 20px,#e64a19 25px);
+	background-size: 25px 25px;
+    margin-top:50px;
+    margin-bottom:50px
+}
+
+/* h3見出し*/
+.sample{
+  width:50%;
+  padding:1px 5px;
+  border:2px solid ;
+  -webkitborder-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+  -moz-border-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+  border-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+}
+
+/* h2横並び*/
+
+.box{
+  position: relative;
+}
+.top-left {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+/* ルール説明*/
+.list_test-wrap {
+    list-style:  none;          /* デフォルトのアイコンを消す */
+    margin:  0;                 /* デフォルト指定上書き */
+    padding: 0;                 /* デフォルト指定上書き */
+    counter-reset: li_count;    /* カウンタをセット */
+}
+
+.list_test {
+    padding:  10px;             /* 余白指定 */
+    margin-bottom: 10px;         /* 要素と要素の間指定 */
+    font-size:  15px;           /* 文字サイズ指定 */
+}
+
+.list_test:before  {
+  counter-increment: li_count;  /* カウンタの値を計算していく */
+  content: counter(li_count)"."; /* 数字出力 */
+  margin-right: 5px;            /* 余白指定 */
+}
+
+/**
+ * レイアウト用ボックスを囲む
+ */
+.container {
+    width: 960px;       /* サイトの基本となる横幅 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
+    margin-left: auto;  /* 左側の余白を自動で調整 */
+}
+
+/* --------------------------
+ * メイン画像
+ * --------------------------
+ */
+.main-img  {
+position: relative;
+
+}
+.main-img p  {
+    font-size:24px;
+    vertical-align:middle;
+    padding:70px 0;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color:red;
+    font-family: 'Caveat', cursive;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Caveat', cursive;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+
+nav ul li {
+    float: left;
+    width: 18%;
+    text-align: center;
+    font-size:8px
+}
+
+
+/* クリアフィックス */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contents {
+   overflow: hidden;
+}
+.item {
+   float: left;
+   padding: 20px 30px;
+   text-align: center;
+}
+/* メインナビ*/
+
+nav {
+  margin-left:auto; /*メニューを右寄せ*/
+
+  position: relative;
+  width: 600px;
+  height: 50px;
+  border-radius: 16px;
+  font-size: 0;
+  text-align: center;
+
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+
+
+
+
+. main-img p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 20px #ccc;
+    transition: 0.5s;
+}
+
+.card-image {
+    width: 30%;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+.card-box {
+    padding-left: 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-description {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.card-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-link:hover .card {
+    box-shadow: 0 5px 10px #ccc;
+}
+
+/* --------------------------
+ * フッター
+ * --------------------------
+ */
+.footer-left {
+    float: left;
+    width: 300px;
+    margin-left: 40px;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Hannari";
+    font-size:30px;
+    text-align:left;
+
+
+}
+.footer-logo {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Hannari";
+}
+
+/* h3見出し*/
+  h2{
+  width:50%;
+  padding:1px 5px;
+  border:2px solid ;
+  -webkitborder-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+  -moz-border-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+  border-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+}
+
+/*------------------------------
+  画像付き吹き出し(会話)
+------------------------------*/
+/* 吹き出し 全体*/
+.talking {
+      margin-bottom:2em;
+      position:relative;
+}
+
+.talking:before , .talking:after {
+      clear:both;
+      content:"";
+      display:block;
+}
+
+/*アイコン*/
+.talking figure {
+      width:65px;     /*アイコンの横幅*/
+      height:60px;    /*アイコンの縦幅*/
+}
+
+.talking-left_icon {
+      float:left;
+      margin-right:20px;    /*アイコンの右の余白(左の吹き出し)*/
+}
+
+.talking-right_icon {
+      float:right;
+      margin-left:20px;    /*アイコンの左の余白(右の吹き出し)*/
+}
+
+.talking figure img {
+      width:100%;
+      height:100%;
+      margin:0;
+      border:2px solid #aaa;
+      border-radius:50%;    /*アイコンの角丸*/
+}
+
+/*アイコンの下の名前*/
+.talking-left_icon figcaption ,
+.talking-right_icon figcaption {
+      padding:2px 0 0;
+      font-size:12px;
+      text-align:center;
+}
+
+/*吹き出しのセリフ部分*/
+.talking-left , .talking-right  {
+      position:relative;
+      padding:10px;
+      border-style:solid;    /*枠線の線種*/
+      border-radius:10px;    /*セリフを入れる部分の角丸*/
+      max-width: calc(100% - 80px);
+}
+
+.talking p {
+      margin:0;
+}
+
+.talking p :last-child {
+      margin:0;
+}
+
+/*---左の吹き出し---*/
+.talking-left {
+      float:left;
+      border-width:2px;         /*枠線の太さ*/
+      border-color:lightpink;   /*枠線の色*/
+      background:lightpink;    /*背景色*/
+}
+
+/*左の吹き出し 三角*/
+.talking-left:before {
+      position: absolute;
+      content: '';
+      border: 10px solid transparent;
+      border-right: 10px solid lightpink;  /*三角の線になる部分*/
+      top: 15px;
+      left: -22px;
+}
+
+.talking-left:after {
+      position: absolute;
+      content: '';
+      border: 10px solid transparent;
+      border-right: 10px solid lightpink;
+      top: 15px;
+      left: -19px;
+}
+
+/*---右の吹き出し---*/
+.talking-right {
+      float:right;
+      border-width:2px;      /*枠線の太さ*/
+      border-color:khaki;    /*枠線の色*/
+      background:khaki;    /*背景色*/
+}
+
+/*右の吹き出し 三角*/
+.talking-right:before {
+      position: absolute;
+      content: '';
+      border: 10px solid transparent;
+      border-left: 10px solid khaki;  /*三角の線になる部分*/
+      top: 15px;
+      right: -22px;
+}
+
+.talking-right:after {
+      position: absolute;
+      content: '';
+      border: 10px solid transparent;
+      border-left: 10px solid khaki;
+      top: 15px;
+      right: -19px;
+}

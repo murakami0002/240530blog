@@ -33,6 +33,7 @@ urlpatterns = [
     path('trivia_potatochips',views.trivia_potatochips,name='trivia_potatochips'),
     path('trivia_population',views.trivia_population,name='trivia_population'),
     path('trivia_athlete_rich2',views.trivia_athlete_rich,name='trivia_athlete_rich2'),
+    path('trivia_game',views.trivia_game,name='trivia_game'),
     path('diary_230110',views.diary_230110,name='diary_230110'),
     path('diary_summary',views.diary_summary,name='diary_summary'),
     path('diary_230114',views.diary_230114,name='diary_230114'),

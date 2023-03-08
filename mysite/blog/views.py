@@ -84,6 +84,10 @@ def trivia_population(request):
     template_name="blog/trivia_population.html"
     return render(request,template_name)
 
+def trivia_game2(request):
+    template_name="blog/trivia_game.html"
+    return render(request,template_name)
+
 def diary_230110(request):
     template_name="blog/diary_230110.html"
     return render(request,template_name)

@@ -3,168 +3,368 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7095790727260609"
-     crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="/static/css/trivia_game.css?20221113">
-    <title>Title</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7095790727260609"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/trivia_game.css?23035">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <title>合コンで盛り上がるゲーム5厳選</title>
 </head>
 <body>
-<h1>合コンで盛り上がるゲーム5厳選</h1>
-<a href=""><img src="{% static 'media_local/party_game.jpg' %}"width="500px" height="300px"></a>
-<div class="box11">
 
-<h2>10円ゲーム</h2>
-  <a href=""><img src="{% static 'media_local/10.jpg'%}"width="250px" height="150px"></a>
-<h3>〔必要人数〕</h3>
-<p>4人以上</p>
-<h3>〔準備物〕</h3>
-<ul>
-  <li>おしぼり</li>
-  <li>10円（人数分）</li>
-  <li>下心（したごころ）</li>
-</ul>
+<div class="container">
 
-<ol class="list2">
-  <li>List1</li>
-  <li>List2</li>
-  <li>List3</li>
-  <li>List4</li>
-</ol>
+    <nav>
+  <a href="{% url 'blog:index' %}">表紙</a>
+  <a href="humor_summary">ユーモア語録</a>
+  <a href="life_summary">ユーモア小道具</a>
+  <a href="trivia_summary">ユーモア豆知識</a>
+  <a href="diary_summary">ユーモア日記</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <div class="main-img">
+        <img src="{% static 'media_local/Image.jpg'%}" width="100%">
+        　　　　<h1>合コンで盛り上がるゲーム5厳選</h1>
+        　　　　　　　<p>Hello</p>
+    </div>
+    <div class="main-under">
+        <p>こんにちは村ちゃんです。<br>今回は、合コンで面白い人になれるボケ集をまとめました。
+            参考にしてください。</p>
+
+    </div>
+    <div class="contents">
+        <ol>
+            <p>お品書き</p>
+            <li>10円ゲーム</li>
+            <li>山手線ゲーム</li>
+            <li>31ゲーム</li>
+            <li>ポッキーゲーム</li>
+            <li>笑ってはいけないゲーム</li>
+        </ol>
+    </div>
 
 
-<h3>〔ルール説明〕</h3>
-<ul>
-  <li>机の真ん中におしぼりを広げて置く</li>
-  <li>参加者全員に10円玉を1枚ずつ配る</li>
-  <li>はい or いいえ で答えられるお題を1つ出す</li>
-  <li>質問に対して「はい」の場合は10円の10を表にして、机の中央にあるおしぼりの下に入れる
-  　　　質問に対して「いいえ」の場合は10円の家を表にして、おしぼりの下に入れる</li>
-  <li>おしぼりの中に10円玉を入れる際は、他の人に見られないよう注意する</li>
-  <li>全員が10円を入れ終わってから、10円玉がはみ出ないようおしぼりを回転させる（３回転くらいでOK）</li>
-  <li>おしぼりを取り払い、10円の裏表を開票する</li>
-</ul>
+<div class="main">
+<hr class="cp_hr10"/>
 
-<h3>〔お題の例〕</h3>
-<ul>
-  <li>今日の飲み会が楽しい人</li>
-  <li>この飲み会の中に気になる人がいる</li>
-  <li>この中に後日2人でデートに行ってもいい人がいる</li>
-  <li>この中にキスしたい人がいる</li>
-  <li>今日は身を任せたい気分の人</li>
-  <p>など</p>
-</ul>
 
-<h3>〔ワンポイントアドバイス〕</h3>
-  <p>誰が「はい」に入れたかなどの犯人探しをしない方が
-  相手側も正直に投票できるため、盛り上がると思います</p>
+    <div class="box">
+        <a href=""><img src="{% static 'media_local/10.jpg'%}" width="500px" height="300px"></a>
+        <div class="top-left">
+            <h2 class="head_test">10円ゲーム</h2>
+        </div>
+    </div>
+
+    <h3 class="sample">最低必要人数</h3>
+    <ul>
+        <li>4人</li>
+    </ul>
+
+    <h3 class="sample">準備物</h3>
+    <ul>
+        <li>おしぼり</li>
+        <li>10円（人数分）</li>
+        <li>下心（したごころ）</li>
+    </ul>
+
+    <div class="list_test-wrap">
+        <h3 class="sample">ルール説明</h3>
+        <ol>
+            <li>机の真ん中におしぼりを広げて置く</li>
+            <li>参加者全員に10円玉を1枚ずつ配る</li>
+            <li>Yes or No で答えられるお題を1つ出す</li>
+            <li>質問に対して「Yes」の場合は10円の10を表側、質問に対して「No」の場合は10円の家を表側にしおしぼりの下に入れる</li>
+            <li>おしぼりの中に10円玉を入れる際は、他の人に見られないよう注意する</li>
+            <li>全員が10円を入れ終わってから、10円玉がはみ出ないようおしぼりを回転させる（３回転くらいでOK）</li>
+            <li>おしぼりを取り払い、10円の裏表を開票する</li>
+        </ol>
+    </div>
+
+    <h3 class="sample">お題の例</h3>
+    <ul>
+        <li>今日の飲み会が楽しい人</li>
+        <li>この飲み会の中に気になる人がいる</li>
+        <li>この中に後日2人でデートに行ってもいい人がいる</li>
+        <li>この中にキスしたい人がいる</li>
+        <li>今日は身を任せたい気分の人　　など</li>
+    </ul>
+
+    <h3 class="sample">ワンポイントアドバイス</h3>
+    <p>誰が「はい」に入れたかなどの犯人探しをしない方が相手側も正直に投票できるため、盛り上がると思います</p>
+
+    <hr class="cp_hr10"/>
+
+    <div class="box">
+        <a href=""><img src="{% static 'media_local/trainmap.jpg'%}" width="500px" height="300px"></a>
+        <div class="top-left">
+            <h2 class="head_test">山手線ゲーム</h2>
+        </div>
+    </div>
+
+    <h3 class="sample">最低必要人数</h3>
+    <ul>
+        <li>2人</li>
+    </ul>
+
+    <h3 class="sample">準備物</h3>
+    <ul>
+        <li>個室（推奨)</li>
+    </ul>
+
+    <div class="list_test-wrap">
+        <h3 class="sample">ルール説明</h3>
+        <ol>
+            <li>誰か1人がお題を決める<</li>
+            <li>お題を決めた人から時計回りで手拍子と共に順番に答える</li>
+            <li>お題提供者「〇〇から始まる〜」　※〇〇はお題提供者の名前</li>
+            <li>参加者「イエーイ」</li>
+            <li>お題提供者「山手線ゲーム〜」</li>
+            <li>参加者「イエーイ」</li>
+            <li>お題提供者「お題は✖︎✖︎」　※✖︎✖︎は下記のお題例を参考下さい</li>
+            <li>全員「せーのっ」</li>
+            <li>全員「パンパン（手拍子）」→回答者「△△ （回答）」→全員「パンパン」→次の回答者「☆☆(回答)」</li>
+            <li>以後繰り返し<</li>
+        </ol>
+    </div>
+
+    <h3 class="sample">お題の例</h3>
+    <ul>
+        <li>色の種類</li>
+        <li>国の名前</li>
+        <li>スポーツの種類る</li>
+        <li>SMAPのメンバーの名前 など</li>
+    </ul>
+
+    <h3 class="sample">ワンポイントアドバイス</h3>
+    <p>嵐のメンバーなど、回答数が限られるお題をチョイスすると盛り上がると思います</p>
+
+    <hr class="cp_hr10"/>
+
+
+    <div class="box">
+        <a href=""><img src="{% static 'media_local/31.jpg'%}" width="500px" height="300px"></a>
+        <div class="top-left">
+            <h2 class="head_test">31ゲーム</h2>
+        </div>
+    </div>
+
+    <h3 class="sample">最低必要人数</h3>
+    <ul>
+        <li>2人</li>
+    </ul>
+
+    <h3 class="sample">準備物</h3>
+    <ul>
+        <li>個室（推奨)</li>
+    </ul>
+
+    <div class="list_test-wrap">
+        <h3 class="sample">ルール説明</h3>
+        <ol>
+            <li>1から順番に数字を言っていき、31を言ってしまった人が負けです。</li>
+            <li>Aさん「1,2,3」</li>
+            <li>Bさん「4、5」</li>
+            <li>Cさん「6,7,8」</li>
+            <li>・・・・Aさん「29,30」</li>
+            <li>Bさん「31」（Bさんの負けです）</li>
+        </ol>
+    </div>
+
+    <h3 class="sample">ワンポイントアドバイス</h3>
+    <p>席順を男女交互に座って行うことで、ハメ技や優しさ（敢えて31をいう)などレパートリーが増えるのでより盛り上がると思います。</p>
+
+
+    <hr class="cp_hr10"/>
+
+    <div class="box">
+        <a href=""><img src="{% static 'media_local/pokki.jpg'%}" width="500px" height="300px"></a>
+        <div class="top-left">
+            <h2 class="head_test">ポッキーゲーム</h2>
+        </div>
+    </div>
+
+    <h3 class="sample">最低必要人数</h3>
+    <ul>
+        <li>4人</li>
+    </ul>
+
+    <h3 class="sample">準備物</h3>
+    <ul>
+        <li>お個室（推奨)</li>
+    </ul>
+
+    <div class="list_test-wrap">
+        <h3 class="sample">ルール説明</h3>
+        <ol>
+            <li>男女1組のペアになる</li>
+            <li>ポッキーを1本取り出して、両端から2人で食べていく（ポテトなど、細長い食べ物でOK）</li>
+            <li>顔を離したり、ポッキーが折れてしまったら負け</li>
+        </ol>
+    </div>
+
+
+    <h3 class="sample">ワンポイントアドバイス</h3>
+    <p>女性が嫌がっていたら辞めましょう</p>
+
+
+    <hr class="cp_hr10"/>
+
+    <div class="box">
+        <a href=""><img src="{% static 'media_local/lauth.jpg'%}" width="250px" height="150px"></a>
+        <div class="top-left">
+            <h2 class="head_test">笑ってはいけないゲーム</h2>
+        </div>
+    </div>
+
+    <h3 class="sample">最低必要人数</h3>
+    <ul>
+        <li>4人</li>
+    </ul>
+
+    <h3 class="sample">準備物</h3>
+    <ul>
+        <li>特になし</li>
+    </ul>
+
+    <div class="list_test-wrap">
+        <h3 class="sample">ルール説明</h3>
+        <ol>
+            <li>10分間のストップウォッチを掛けます。</li>
+            <li>参加者全員に10円玉を1枚ずつ配る</li>
+            <li>たわいもない会話の中でボケをかまし、笑いを取りに行く</li>
+            <li>または何かのお題に沿って会話を進行して、笑いを取りに行く</li>
+        </ol>
+
+
+        <h3 class="sample">ワンポイントアドバイス</h3>
+        <p>女性が嫌がっていたら辞めましょう</p>
+
+    </div>
+
+    <footer>
+            <div class="clearfix">
+                <div class="footer-left">
+
+                    <p>ユーモアな館</p>
+
+                </div>
+
+            </div>
+            <p class="copyright"></p>
+        </footer>
+
 </div>
 
-<div class="box12">
-<h2>山手線ゲーム</h2>
-<a href=""><img src="{% static 'media_local/trainmap.jpg'%}"width="250px" height="150px"></a>
-  <h3>〔最低人数〕</h3>
-<p>2人</p>
-<h3>〔準備物〕</h3>
-<ul>
-  <li>個室（推奨)</li>
-</ul>
-<h3>〔ルール説明〕</h3>
-<ul>
-  <li>誰か1人がお題を決める</li>
-  <li>お題を決めた人から時計回りで手拍子と共に順番に答える</li>
-  <li>ゲームフロー</li>
-  <p>お題提供者「〇〇から始まる〜」　※〇〇はお題提供者の名前</p>
-  <p>参加者「イエーイ」　</p>
-  <p>お題提供者「山手線ゲーム〜」</p>
-  <p>参加者「イエーイ」</p>
-  <p>お題提供者「お題は✖︎✖︎」　※✖︎✖︎は下記のお題例を参考下さい</p>
-  <p>全員「せーのっ」</p>
-  <p>全員「パンパン（手拍子）」→回答者「△△ （回答）」→全員「パンパン」→次の回答者「☆☆(回答)」</p>
-  <li>以後繰り返し</li>
-</ul>
+<div class="sidebar">
+    <p>🌀ユーモアな商材🌀</p>
 
-<h3>〔お題の例〕</h3>
-<ul>
-  <li>〔色の種類〕</li>
-  <li>国の名前</li>
-  <li>スポーツの種類</li>
-  <li>SMAPのメンバーの名前</li>
-  <p>など</p>
-</ul>
 
-  <h3>〔ワンポイントアドバイス〕</h3>
-  <p>たまに嵐のメンバーなど、回答数が限られるお題をチョイスすると
-  　　盛り上がると思います</p>
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;">
+        <tbody>
+        <tr style="border-style:none;">
+            <td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F"
+                    rel="nofollow"><img border="0" alt=""
+                                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/kosupure55/cabinet/sp09/spd_1564973611973_0.jpg?_ex=64x64"/></a>
+            </td>
+            <td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p
+                    style="padding:0; margin:0;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s6jz4.2bo11801.g00s6jz4.2bo1291f%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkosupure55%252Fd102-44-potato%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkosupure55%252Fi%252F10001591%252F"
+                    rel="nofollow">面白い コスプレ ハロウィン フライドポテト 着ぐるみ おもしろ コスチューム ポテト 衣装 おもしろい 仮装</a></p>
+                <p style="color:#666; margin-top:5px line-height:1.5;"></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;">
+        <tbody>
+        <tr style="border-style:none;">
+            <td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F"
+                    rel="nofollow"><img border="0" alt=""
+                                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/oilhonpo/cabinet/06366786/imgrc0070117066.jpg?_ex=64x64"/></a>
+            </td>
+            <td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p
+                    style="padding:0; margin:0;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s9ql4.2bo1176d.g00s9ql4.2bo12372%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Foilhonpo%252Ftoy-16320-120%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Foilhonpo%252Fi%252F10000400%252F"
+                    rel="nofollow">送料無料 ぬいぐるみ 人形 抱き枕 男の子 昼休みクッション 面白いぬいぐるみ 大きい クリスマス お誕生日 記念日 プレゼント お祝い 飾り物 撮影道具
+                ギフト100cm</a></p>
+                <p style="color:#666; margin-top:5px line-height:1.5;"></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;">
+        <tbody>
+        <tr style="border-style:none;">
+            <td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F"
+                    rel="nofollow"><img border="0" alt=""
+                                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8381/9784537218381_1_3.jpg?_ex=64x64"/></a>
+            </td>
+            <td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p
+                    style="padding:0; margin:0;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16417867%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F20095081%252F"
+                    rel="nofollow">眠れなくなるほど面白い 図解 世界史 世界史の流れとつながり 地理・出来事がまるわかり！ [ 鈴木 旭 ]</a></p>
+                <p style="color:#666; margin-top:5px line-height:1.5;"></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    　
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;">
+        <tbody>
+        <tr style="border-style:none;">
+            <td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F"
+                    rel="nofollow"><img border="0" alt=""
+                                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/dear-book/cabinet/nonst0432/b09pfzt8dg00.jpg?_ex=64x64"/></a>
+            </td>
+            <td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p
+                    style="padding:0; margin:0;"><a
+                    href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s4gp4.2bo1145a.g00s4gp4.2bo12e90%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fdear-book%252Fb09pfzt8dg%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdear-book%252Fi%252F10545864%252F"
+                    rel="nofollow">ナイトライト 授乳ライト ベッドサイドランプ キウイ鳥 口でコントロール 間接照明 USB充電式 タイマー機能 暖光&amp;白い光 無段階輝度調節
+                面白いデザイン
+                目に優しい 可愛い 寝室 テーブ...</a></p>
+                <p style="color:#666; margin-top:5px line-height:1.5;"></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-pert-adl-02-free-cpn%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10007511%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/umineko-shoji/umineko/img/PP-PERT-ADL-02-FREE_1.gif?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-pert-adl-02-free-cpn%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10007511%252F" rel="nofollow">本格 ハロウィン 衣装 コスプレ 仮装 コスチューム 男 男性 メンズ レディース うける 面白い かっこいい お手軽13点セット ピエロ 道化師 人気者 なりきり 大人 フリーサイズ お買い物マラソン お家遊び 家 遊び 室内 遊び着 zoom オンライン 飲み会 宅飲み</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">　　　　
+
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-md-adl-02-pk-m-np%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10006768%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/umineko-shoji/umineko/img/PP-MD-ADL-02_1.gif?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-md-adl-02-pk-m-np%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10006768%252F" rel="nofollow">ハロウィン 衣装 コスプレ 仮装 コスチューム かわいい お手軽5点セット レディース 猫耳 メイド ドレス コスチューム M ピンク お家遊び 家 遊び 室内 遊び着 zoom オンライン 飲み会 宅飲み</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+　　　<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00psme4.2bo116ca.g00psme4.2bo12e0d%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fe-katorea%252F10000648c2%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fe-katorea%252Fi%252F10002481%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/e-katorea/cabinet/00207465/03037163/imgrc0070977758.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00psme4.2bo116ca.g00psme4.2bo12e0d%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fe-katorea%252F10000648c2%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fe-katorea%252Fi%252F10002481%252F" rel="nofollow">「ヘパリーゼGT270錠」【2個セットで送料無料】【第3類医薬品】【あす楽対応】(ヘパリーゼ/滋養強壮剤/錠剤/送料無料/へパリーゼ　錠剤/ゼリア新薬/宴会/忘年会/ 接待 / 飲み会)</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s1jx4.2bo11ce1.g00s1jx4.2bo125fd%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkoplina%252F4975673110218-3%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkoplina%252Fi%252F10000181%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/koplina/cabinet/07890061/02561-3p-fullimg01.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s1jx4.2bo11ce1.g00s1jx4.2bo125fd%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fkoplina%252F4975673110218-3%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fkoplina%252Fi%252F10000181%252F" rel="nofollow">紀州産梅ハニップ 590g 3本セット【希釈ドリンク/梅ジュース/おうち飲み会/ノンアルコール/ウメ/4倍希釈10％果汁/手作り風/甘さ控えめ/健康食品/安心国内製造/コプリナ/送料無料】</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00pt564.2bo11666.g00pt564.2bo12bfe%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fmixnuts%252Fmtr097%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fmixnuts%252Fi%252F10027358%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/mixnuts/cabinet/040/mtr097.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00pt564.2bo11666.g00pt564.2bo12bfe%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fmixnuts%252Fmtr097%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fmixnuts%252Fi%252F10027358%252F" rel="nofollow">パーティーグッズ 変顔マスク 爆笑 1個販売 お面 かぶりもの 覆面 衣装 変装グッズ 仮面 流行 仮装 コスプレ 大人用　忘年会 新年会 リアル ユニーク 余興 コスチューム ネタ 爆笑 宴会 学園祭 面白い ハロウィーン リモート 飲み会 拘束具 ホラー映画 博士 SM風 噛みつき魔</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00tfux4.2bo11b2a.g00tfux4.2bo12eb5%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Farsion%252Fclo774%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Farsion%252Fi%252F10000549%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/arsion/cabinet/08918292/clo774_00.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00tfux4.2bo11b2a.g00tfux4.2bo12eb5%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Farsion%252Fclo774%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Farsion%252Fi%252F10000549%252F" rel="nofollow">ドラキュラゴースト マント 防風 フード コスチューム 仮装 コスプレ衣装 パーティー 飲み会 ハロウイン ライブ ひと盛り上がり 送料無料</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00r7vg4.2bo11051.g00r7vg4.2bo124de%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fnijitora%252F10011975%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fnijitora%252Fi%252F10011975%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nijitora/cabinet/2015/sam/ss0240.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00r7vg4.2bo11051.g00r7vg4.2bo124de%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fnijitora%252F10011975%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fnijitora%252Fi%252F10011975%252F" rel="nofollow">景品 セット 松阪牛 うなぎ 景品 4点 セット 商品引換券 あす楽 送料無料 | 二次会 景品 忘年会 景品 ビンゴ セット ボウリング大会 結婚式二次会 景品 結婚式 披露宴 ゴルフ景品 ゴルフコンペ ビンゴ景品 コンペ 賞品 コンペ景品 会社 イベント 社内 行事 飲み会 歓送迎会</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s51l4.2bo115c2.g00s51l4.2bo12b14%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fagripartner%252Fbeef-mutenka-j1600%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fagripartner%252Fi%252F10001771%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/agripartner/cabinet/meet/newmutenka/beef-mutenka1-40pr.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s51l4.2bo115c2.g00s51l4.2bo12b14%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fagripartner%252Fbeef-mutenka-j1600%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fagripartner%252Fi%252F10001771%252F" rel="nofollow">期間限定 10％オフ 業務用 燻製職人の無添加ビーフジャーキー 40袋 セット おつまみ 珍味 送料無料 お試し おやつ 飲み会 山形 40g×40袋 セット 無添加[無添加ビーフジャーキー40袋]【ラッピング対応】 即送</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s1jy4.2bo119d2.g00s1jy4.2bo129ec%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Finstore%252Ftequilaball-50set%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Finstore%252Fi%252F10000987%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/instore/cabinet/tb/50_01.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s1jy4.2bo119d2.g00s1jy4.2bo129ec%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Finstore%252Ftequilaball-50set%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Finstore%252Fi%252F10000987%252F" rel="nofollow">【SS中10％off】TEQUILA BALL テキーラボール 50個入り オレンジ パイナップル ヨーグルト カシス ストロベリー 各味わい10個 お酒 飲み会 パーティー 結婚式 二次会 三次会 盛り上がる お店 バー クラブ イベント フェス 幹事 パーティーグッズ リキュール入りスイーツ</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00psme4.2bo116ca.g00psme4.2bo12e0d%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fe-katorea%252F4987103048466set5%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fe-katorea%252Fi%252F10002671%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/e-katorea/cabinet/08971453/09037259/4987103048466set5.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00psme4.2bo116ca.g00psme4.2bo12e0d%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fe-katorea%252F4987103048466set5%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fe-katorea%252Fi%252F10002671%252F" rel="nofollow">ヘパリーゼドリンク2　50mL×10本×【5個セット】【送料無料】【第3類医薬品】【あす楽対応】(ヘパリーゼ/滋養強壮/送料無料/へパリーゼ/ゼリア新薬/宴会/忘年会/ 接待 / 飲み会)</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-zst-adl-01-cpn%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10007594%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/umineko-shoji/umineko/img/PP-ZST-ADL-01_1.gif?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-zst-adl-01-cpn%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10007594%252F" rel="nofollow">ハロウィン 衣装 コスプレ 仮装 コスチューム 男 男性 女 女性 メンズ レディース 節分 鬼 青鬼 赤鬼 うける 面白い かっこいい お手軽 全身タイツ モジモジくん 人気者 なりきり 大人 S M L XL 2XL 3XL 145cm-200cm 大きいサイズ 対応 家 遊び 全身 タイツ 飲み会 グッズ</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-mcho-adl-01%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10005369%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/umineko-shoji/umineko/img/PP-MCHO-ADL-01_1.gif?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Fpp-mcho-adl-01%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10005369%252F" rel="nofollow">ハロウィン 衣装 コスプレ 仮装 コスチューム 男 男性 メンズ うける 生々しくて面白い かっこいい お手軽 軽くて丈夫 筋肉 マッスル マッチョ ムキムキ 腹筋 大胸筋 上半身 人気者 なりきり フリーサイズ お家遊び 家 遊び 室内 遊び着 zoom オンライン 飲み会 宅飲み</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+    <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Firui-21-xl-np%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10002718%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/umineko-shoji/umineko/img/IRUI-21-L.gif?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00s89a4.2bo11640.g00s89a4.2bo1261e%2Fa22101656831_3NL52J_3ZHHKI_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fumineko-shoji%252Firui-21-xl-np%252F%26amp%3Bm%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fumineko-shoji%252Fi%252F10002718%252F" rel="nofollow">ハロウィン 衣装 コスプレ 仮装 コスチューム かわいい お手軽セット 赤ずきん風コスチューム XLサイズ お家遊び 家 遊び 室内 おもちゃ 遊び着 ベランダ 庭 zoom オンライン 飲み会 宅飲み</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></tbody></table>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NL52J+3ZHHKI+2HOM+BWGDT" alt="">
+
 </div>
-
-<div class="box13">
-<h2>31ゲーム</h2>
-<a href=""><img src="{% static 'media_local/31.jpg'%}"width="250px" height="150px"></a>
-<h3>〔最低人数〕</h3>
-<p>2人</p>
-<h3>〔準備物〕</h3>
-<ul>
-  <li>個室（推奨)</li>
-</ul>
-<h3>〔ルール説明〕</h3>
-<ul>
-  <li>1から順番に数字を言っていき、31を言ってしまった人が負けです。</li>
-  <li>ゲームフロー</li>
-  <p>Aさん「1,2,3」
-  <p>Bさん「4、5」</p>
-  <p>Cさん「6,7,8」</p>
-  <p>・・・・Aさん「29,30」</p>
-  <p>Bさん「31」（Bさんの負けです）</p>
-</ul>
-
-  <h3>〔ワンポイントアドバイス〕</h3>
-  <p>席順を男女交互に座って行うことで、ハメ技や優しさ（敢えて31をいう)などレパートリーが増えるので
-  　　より盛り上がると思います。</p>
-</div>
-
-<div class="box14">
-
-<h2>ポッキーゲーム</h2>
-<a href=""><img src="{% static 'media_local/pokki.jpg'%}"width="250px" height="150px"></a>
-<h3>〔最低人数〕</h3>
-<p>4人</p>
-<h3>〔準備物〕</h3>
-<ul>
-  <li>個室（推奨)</li>
-</ul>
-<h3>〔ルール説明〕</h3>
-<ul>
-  <li>男女1組のペアになる</li>
-  <li>ポッキーを1本取り出して、両端から2人で食べていく（ポテトなど、細長い食べ物でOK）</li>
-  <li>顔を離したり、ポッキーが折れてしまったら負け</li>
-  <li></li>
-</ul>
-
-  <h3>〔ワンポイントアドバイス〕</h3>
-  <p>女性が嫌がっていたら辞めましょう</p>
-
-
-</div>
-
-<div class="box15">
-<h2>笑ってはいけないゲーム</h2>
-<a href=""><img src="{% static 'media_local/lauth.jpg'%}"width="250px" height="150px"></a>
-<h3>〔最低人数〕</h3>
-<p>4人</p>
-<h3>〔準備物〕</h3>
-<ul>
-  <li>特になし</li>
-</ul>
-<h3>〔ルール説明〕</h3>
-<ul>
-  <li>10分間のストップウォッチを掛けます。</li>
-  <li>スタートと同時に会話を始めます</li>
-  <li>たわいもない会話の中でボケをかまし、笑いを取りに行く</li>
-  <li>または何かのお題に沿って会話を進行して、笑いを取りに行く</li>
-
-  <h3>〔ワンポイントアドバイス〕</h3>
-  <p>女性が嫌がっていたら辞めましょう</p>
-</ul>
 </div>
 
 </body>

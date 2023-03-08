@@ -15,11 +15,11 @@
 <div class="container">
 
 <nav>
-  <a href="humor_summary">Humor</a>
-  <a href="humor_summary">Top Page</a>
-  <a href="life_summary">Life</a>
-  <a href="trivia_summary">Trivia</a>
-  <a href="diary_summary">Diary</a>
+  <a href="{% url 'blog:index' %}">表紙</a>
+  <a href="humor_summary">ユーモア語録</a>
+  <a href="life_summary">ユーモア小道具</a>
+  <a href="trivia_summary">ユーモア豆知識</a>
+  <a href="diary_summary">ユーモア日記</a>
   <div class="animation start-home"></div>
 </nav>
 
@@ -39,7 +39,7 @@
         <img class="card-image" src="{% static 'media_local/1.jpg'%}">
         <div class="card-box">
             <h2 class="card-title">No.1</h2>
-            <p class="card-description">うるせえ。縄文時代やとモテてるわ。生まれてくるのが遅すぎただけ</p>
+            <p class="card-description">うるせえ、縄文時代やとモテてるわ、生まれてくるのが遅すぎただけ</p>
         </div>
     </div>
 </a>
@@ -49,7 +49,7 @@
         <img class="card-image" src="{% static 'media_local/2.jpg'%}">
         <div class="card-box">
             <h2 class="card-title">No.2</h2>
-            <p class="card-description">生まれてくる国を間違えただけ。コンゴ共和国やと多分モテてる</p>
+            <p class="card-description">生まれた国を間違えただけ、コンゴ共和国やと多分モテてる</p>
         </div>
     </div>
 </a>

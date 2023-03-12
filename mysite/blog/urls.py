@@ -22,6 +22,7 @@ urlpatterns = [
     #path('<int:question_id>/vote/',views.vote,name='vote'),
     path('trivia_greatman',views.trivia_greatman,name='trivia_greatman'),
     path('life_summary',views.life_summary,name='life_summary'),
+    path('life_fx',views.life_fx,name='life_fx'),
     path('trivia_summary',views.trivia_summary,name='trivia_summary'),
     path('trivia_rich',views.trivia_rich,name='trivia_rich'),
     path('trivia_athlete_rich',views.trivia_athlete_rich,name='trivia_athlete_rich'),

@@ -155,3 +155,7 @@ def humor_baseball_tsukkomi(request):
 def humor_summary(request):
     template_name="blog/humor_summary.html"
     return render(request,template_name)
+
+def life_fx(request):
+    template_name="blog/life_fx.html"
+    return render(request,template_name)

@@ -17,14 +17,14 @@
 
 /* ヘッダー画像*/
 
-.title{
-    float: right;
-    position: absolute;
-  top: 55px;
-  left:770px;
-  margin:0;
+div.title {
+  width: 1000px;
+  display: flex;
+  line-height: 150px;
 
 }
+
+/*区切り選*/
 
 .hr_stripe{
   background: repeating-linear-gradient(45deg, red , red 10px,  white 10px, white 20px, green 20px, green 30px, white 30px, white 40px);
@@ -50,14 +50,6 @@
 
 }
 
-/* 商材リンク*/
-.flex{
-    display: flex;
-    width: 100px;
-}
-.flex p{
-    width: 100px;
-}
 
 
 /* クリアフィックス */
@@ -149,7 +141,6 @@ nav ul .active a {
  * --------------------------
  */
 .main-img  {
-
     margin 0;
     display:flex;
 

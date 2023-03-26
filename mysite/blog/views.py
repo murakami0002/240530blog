@@ -104,6 +104,10 @@ def diary_230115(request):
     template_name="blog/diary_230115.html"
     return render(request,template_name)
 
+def humor_summary(request):
+    template_name="blog/humor_summary.html"
+    return render(request,template_name)
+
 def humor_busaiku(request):
     template_name="blog/humor_busaiku.html"
     return render(request,template_name)
@@ -141,7 +145,7 @@ def humor_positive(request):
     return render(request,template_name)
 
 def humor_life(request):
-    template_name="blog/humor_life.html"
+    template_name="blog/life_fx.html"
     return render(request,template_name)
 
 def humor_soccer_tsukkomi(request):
@@ -152,10 +156,17 @@ def humor_baseball_tsukkomi(request):
     template_name="blog/humor_baseball_tsukkomi.html"
     return render(request,template_name)
 
-def humor_summary(request):
-    template_name="blog/humor_summary.html"
-    return render(request,template_name)
+
+
 
 def life_fx(request):
     template_name="blog/life_fx.html"
+    return render(request,template_name)
+
+def life_kabu(request):
+    template_name="blog/life_kabu.html"
+    return render(request,template_name)
+
+def life_coin(request):
+    template_name="blog/life_coin.html"
     return render(request,template_name)

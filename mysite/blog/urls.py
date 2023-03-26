@@ -52,5 +52,8 @@ urlpatterns = [
     path('humor_life',views.humor_life,name='humor_life'),
     path('humor_soccer_tsukkomi',views.humor_soccer_tsukkomi,name='humor_soccer_tsukkomi'),
     path('humor_baseball_tsukkomi',views.humor_baseball_tsukkomi,name='humor_baseball_tsukkomi'),
+    path('life_kabu',views.life_kabu,name='life_kabu'),
+    path('life_coin',views.life_coin,name='life_coin'),
+
 
 ]

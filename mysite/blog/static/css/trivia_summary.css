@@ -7,47 +7,6 @@
     margin-left: auto;  /* 左側の余白を自動で調整 */
 }
 
-/*サブタイトル*/
-h2{
-font-size:26px;
-font-family: "Hannari";
-}
-
-/* ヘッダー画像*/
-
-.title{
-    float: right;
-    position: absolute;
-  top: 100px;
-  left:770px;
-  margin:0;
-
-}
-
-.hr_stripe{
-  background: repeating-linear-gradient(45deg, red , red 10px,  white 10px, white 20px, green 20px, green 30px, white 30px, white 40px);
-  background-color: gray;
-  width: auto;
-  height: 6px;
-  margin: 0;
-
-}
-
-/* メインコンテンツ */
-.main {
-    float: left;
-    width: 650px;
-    margin: 0;
-}
-
-/* サイドバー */
-.sidebar {
-    float: left;
-    width: 250px;
-    font-family: "Hannari";
-
-}
-
 /* クリアフィックス */
 .clearfix:after {
     content: "";
@@ -55,7 +14,29 @@ font-family: "Hannari";
     clear: both;
     margin: 0;
     font-family: "Hannari";
+}
 
+
+/* ヘッダー画像*/
+.intro{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+.side_image {
+  margin:0;
+  padding:0;
+}
+
+.side_text {
+  line-height:6;
+}
+
+
+/*背景色*/
+body{
+    background-color:#EEEEEE;
 }
 
 /* --------------------------
@@ -67,15 +48,14 @@ header h1 {
     font-weight: bold;
     color: #333;
     font-family: "Hannari";
-
+    margin:0;
+    padding:0;
 }
 
 header p span {
     font-size: 24px;
     font-weight: bold;
     margin:0;
-
-
 }
 
 header p {
@@ -83,10 +63,49 @@ header p {
     margin:0;
     font-family: "Hannari";
 }
+
 .description {
     margin-bottom: 0px;
 }
 
+
+
+/*区切り線*/
+.hr_stripe{
+  background: repeating-linear-gradient(45deg, red , red 10px,  white 10px, white 20px, green 20px, green 30px, white 30px, white 40px);
+  background-color: gray;
+  width: auto;
+  height: 6px;
+  margin: 0;
+}
+
+/*サブタイトル*/
+h2{
+font-size:26px;
+font-family: "Hannari";
+}
+
+
+/*記事*/
+
+.flex{
+    display:flex;
+}
+
+.pr-area {
+    margin-bottom: 10px;
+    width: 600px;
+    margin-top:0;
+}
+
+/* サイドバー */
+.sidebar {
+    float: left;
+    width: 200px;
+    font-family: "Hannari";
+    margin:20px;
+
+}
 
 /* --------------------------
  * 見出し
@@ -147,51 +166,29 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* --------------------------
- * PRエリア
- * --------------------------
- */
-.pr-area {
-    margin-bottom: 10px;
-    width: 600px;
-    margin-top:0;
+
+
+/*人気記事　タイトル付き（見出しボックス）*/
+.box71{
+margin: 2em auto; /* ボックスの余白 */
+background-color: #fff; /* ボックス背景色 */
+padding: 5em 2em 2em; /* ボックス内側余白 */
+position:relative; /*配置(ここを基準に)*/
+box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+width:300px;/*横幅最大幅 */
+
 }
-.pr-area li {
-    float: left;
-    margin: 0 10px;
-    width: 200px;
-    margin-bottom: 10px;
-}
-.pr-area li h2 {
-    border-left: 5px solid #16a765;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 5px 0;
-    padding-left: 10px;
-    margin-top:0;
-    font-family: "Hannari";
-}
-.pr-area .shadow {
-    width: 100%;
-    overflow: hidden;
-    margin-top:0;
-}
-.pr-area .shadow:hover {
-    opacity: 0.6;
-}
-.pr-area .trim-img {
-    width: 100%;
-    overflow: hidden;
-}
-.pr-area p {
-    font-size: 13px;
-    line-height: 1.8;
-    padding: 5px;
-    font-family: "Hannari";
-}
-.pr-area a p:hover {
-    color: #16a765;
-    text-decoration: underline;
+
+.box71 .box-title {
+background-color: #A7B4AF; /* タイトル背景色 */
+font-size: 1.4em;/* タイトル文字の大きさ */
+color: #fff; /* タイトル文字色 */
+padding:10px;/*タイトル余白*/
+text-align: center;	/* タイトル中央寄せ */
+position:absolute;	/* 配置(ここを動かす) */
+top:0;	/*上から(0px)に配置 */
+left:0; /*左から(0px)に配置 */
+width:300px;/*横幅最大幅 */
 }
 
 /* メインナビ*/

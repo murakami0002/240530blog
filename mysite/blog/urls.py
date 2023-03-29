@@ -40,6 +40,7 @@ urlpatterns = [
     path('diary_230114',views.diary_230114,name='diary_230114'),
     path('diary_230115',views.diary_230115,name='diary_230115'),
     path('humor_summary',views.humor_summary,name='humor_summary'),
+    path('humor_seiza',views.humor_seiza,name='humor_seiza'),
     path('humor_busaiku',views.humor_busaiku,name='humor_busaiku'),
     path('humor_ladytalk',views.humor_ladytalk,name='humor_ladytalk'),
     path('humor_party',views.humor_party,name='humor_party'),

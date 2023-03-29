@@ -108,6 +108,10 @@ def humor_summary(request):
     template_name="blog/humor_summary.html"
     return render(request,template_name)
 
+def humor_seiza(request):
+    template_name="blog/humor_seiza.html"
+    return render(request,template_name)
+
 def humor_busaiku(request):
     template_name="blog/humor_busaiku.html"
     return render(request,template_name)

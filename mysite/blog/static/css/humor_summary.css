@@ -7,6 +7,22 @@
     margin-left: auto;  /* 左側の余白を自動で調整 */
 }
 
+/* ヘッダー画像*/
+.intro{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+.side_image {
+  margin:0;
+  padding:0;
+}
+
+.side_text {
+  line-height:6;
+}
+
 /* クリアフィックス */
 .clearfix:after {
     content: "";
@@ -30,6 +46,8 @@ header h1 {
     font-weight: bold;
     color: #333;
     font-family: "Hannari";
+    margin:0;
+    padding:0;
 }
 
 header p span {
@@ -49,16 +67,6 @@ header p {
 }
 
 
-
-/* ヘッダー画像*/
-.title{
-    float: right;
-    position: absolute;
-  top: 100px;
-  left:770px;
-  margin:0;
-
-}
 
 
 /*区切り線*/

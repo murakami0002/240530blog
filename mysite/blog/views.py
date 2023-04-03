@@ -174,3 +174,13 @@ def life_kabu(request):
 def life_coin(request):
     template_name="blog/life_coin.html"
     return render(request,template_name)
+
+
+def life_comic(request):
+    template_name="blog/life_comic.html"
+    return render(request,template_name)
+
+
+def life_english(request):
+    template_name="blog/life_english.html"
+    return render(request,template_name)

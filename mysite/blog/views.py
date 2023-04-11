@@ -180,7 +180,19 @@ def life_comic(request):
     template_name="blog/life_comic.html"
     return render(request,template_name)
 
+def life_glasses(request):
+    template_name="blog/life_glasses.html"
+    return render(request,template_name)
+
 
 def life_english(request):
     template_name="blog/life_english.html"
+    return render(request,template_name)
+
+def life_trainer(request):
+    template_name="blog/life_trainer.html"
+    return render(request,template_name)
+
+def life_sneaker(request):
+    template_name="blog/life_sneaker.html"
     return render(request,template_name)

@@ -24,6 +24,11 @@ div.title {
 
 }
 
+/*背景色*/
+body{
+    background-color:#EEEEEE;
+}
+
 /*区切り選*/
 
 .hr_stripe{
@@ -45,9 +50,32 @@ div.title {
 /* サイドバー */
 .sidebar {
     float: left;
-    width: 250px;
+    width: 200px;
     font-family: "Hannari";
+    margin:20px;
+}
 
+/*人気記事　タイトル付き（見出しボックス）*/
+.box71{
+margin: 2em auto; /* ボックスの余白 */
+background-color: #fff; /* ボックス背景色 */
+padding: 5em 2em 2em; /* ボックス内側余白 */
+position:relative; /*配置(ここを基準に)*/
+box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+width:255px;/*横幅最大幅 */
+
+}
+
+.box71 .box-title {
+background-color: #A7B4AF; /* タイトル背景色 */
+font-size: 1.4em;/* タイトル文字の大きさ */
+color: #fff; /* タイトル文字色 */
+padding:10px;/*タイトル余白*/
+text-align: center;	/* タイトル中央寄せ */
+position:absolute;	/* 配置(ここを動かす) */
+top:0;	/*上から(0px)に配置 */
+left:0; /*左から(0px)に配置 */
+width:300px;/*横幅最大幅 */
 }
 
 

@@ -57,5 +57,8 @@ urlpatterns = [
     path('life_coin',views.life_coin,name='life_coin'),
     path('life_comic',views.life_comic,name='life_comic'),
     path('life_english',views.life_english,name='life_english'),
+    path('life_glasses',views.life_glasses,name='life_glasses'),
+    path('life_trainer',views.life_trainer,name='life_trainer'),
+    path('life_sneaker',views.life_sneaker,name='life_sneaker'),
 
 ]

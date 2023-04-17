@@ -160,9 +160,6 @@ def humor_baseball_tsukkomi(request):
     template_name="blog/humor_baseball_tsukkomi.html"
     return render(request,template_name)
 
-
-
-
 def life_fx(request):
     template_name="blog/life_fx.html"
     return render(request,template_name)
@@ -195,4 +192,28 @@ def life_trainer(request):
 
 def life_sneaker(request):
     template_name="blog/life_sneaker.html"
+    return render(request,template_name)
+
+def life_jeans(request):
+    template_name="blog/life_jeans.html"
+    return render(request,template_name)
+
+def life_auter(request):
+    template_name="blog/life_auter.html"
+    return render(request,template_name)
+
+def life_poro(request):
+    template_name="blog/life_poro.html"
+    return render(request,template_name)
+
+def life_tshirt(request):
+    template_name="blog/life_tshirt.html"
+    return render(request,template_name)
+
+def life_parka(request):
+    template_name="blog/life_parka.html"
+    return render(request,template_name)
+
+def life_under(request):
+    template_name="blog/life_under.html"
     return render(request,template_name)

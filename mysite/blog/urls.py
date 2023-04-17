@@ -60,5 +60,10 @@ urlpatterns = [
     path('life_glasses',views.life_glasses,name='life_glasses'),
     path('life_trainer',views.life_trainer,name='life_trainer'),
     path('life_sneaker',views.life_sneaker,name='life_sneaker'),
-
+    path('life_jeans',views.life_jeans,name='life_jeans'),
+    path('life_auter',views.life_auter,name='life_auter'),
+    path('life_poro',views.life_poro,name='life_poro'),
+    path('life_tshirt',views.life_tshirt,name='life_tshirt'),
+    path('life_parka',views.life_parka,name='life_parka'),
+    path('life_under',views.life_under,name='life_under'),
 ]

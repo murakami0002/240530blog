@@ -217,3 +217,11 @@ def life_parka(request):
 def life_under(request):
     template_name="blog/life_under.html"
     return render(request,template_name)
+
+def life_cap(request):
+    template_name="blog/life_cap.html"
+    return render(request,template_name)
+
+def life_socks(request):
+    template_name="blog/life_socks.html"
+    return render(request,template_name)

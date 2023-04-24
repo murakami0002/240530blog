@@ -66,4 +66,6 @@ urlpatterns = [
     path('life_tshirt',views.life_tshirt,name='life_tshirt'),
     path('life_parka',views.life_parka,name='life_parka'),
     path('life_under',views.life_under,name='life_under'),
+    path('life_cap',views.life_cap,name='life_cap'),
+    path('life_socks',views.life_socks,name='life_socks'),
 ]

@@ -177,8 +177,8 @@ def life_comic(request):
     template_name="blog/life_comic.html"
     return render(request,template_name)
 
-def life_glasses(request):
-    template_name="blog/life_glasses.html"
+def fashion_glasses(request):
+    template_name="blog/fashion_glasses.html"
     return render(request,template_name)
 
 
@@ -186,42 +186,55 @@ def life_english(request):
     template_name="blog/life_english.html"
     return render(request,template_name)
 
-def life_trainer(request):
-    template_name="blog/life_trainer.html"
+def fashion_summary(request):
+    template_name="blog/fashion_summary.html"
     return render(request,template_name)
 
-def life_sneaker(request):
-    template_name="blog/life_sneaker.html"
+
+def fashion_trainer(request):
+    template_name="blog/fashion_trainer.html"
     return render(request,template_name)
 
-def life_jeans(request):
-    template_name="blog/life_jeans.html"
+def fashion_sneaker(request):
+    template_name="blog/fashion_sneaker.html"
     return render(request,template_name)
 
-def life_auter(request):
-    template_name="blog/life_auter.html"
+def fashion_jeans(request):
+    template_name="blog/fashion_jeans.html"
     return render(request,template_name)
 
-def life_poro(request):
-    template_name="blog/life_poro.html"
+def fashion_auter(request):
+    template_name="blog/fashion_auter.html"
     return render(request,template_name)
 
-def life_tshirt(request):
-    template_name="blog/life_tshirt.html"
+def fashion_poro(request):
+    template_name="blog/fashion_poro.html"
     return render(request,template_name)
 
-def life_parka(request):
-    template_name="blog/life_parka.html"
+def fashion_tshirt(request):
+    template_name="blog/fashion_tshirt.html"
     return render(request,template_name)
 
-def life_under(request):
-    template_name="blog/life_under.html"
+def fashion_parka(request):
+    template_name="blog/fashion_parka.html"
     return render(request,template_name)
 
-def life_cap(request):
-    template_name="blog/life_cap.html"
+def fashion_under(request):
+    template_name="blog/fashion_under.html"
     return render(request,template_name)
 
-def life_socks(request):
-    template_name="blog/life_socks.html"
+def fashion_cap(request):
+    template_name="blog/fashion_cap.html"
+    return render(request,template_name)
+
+def fashion_socks(request):
+    template_name="blog/fashion_socks.html"
+    return render(request,template_name)
+
+def fashion_watch(request):
+    template_name="blog/fashion_watch.html"
+    return render(request,template_name)
+
+def fashion_suit(request):
+    template_name="blog/fashion_suit.html"
     return render(request,template_name)

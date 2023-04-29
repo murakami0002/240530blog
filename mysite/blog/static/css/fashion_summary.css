@@ -1,0 +1,377 @@
+/**
+ * レイアウト用ボックスを囲む
+ */
+.container {
+    width: 960px;       /* サイトの基本となる横幅 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
+    margin-left: auto;  /* 左側の余白を自動で調整 */
+}
+
+/* ヘッダー画像*/
+.intro{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+.side_image {
+  margin:0;
+  padding:0;
+}
+
+.side_text {
+  line-height:6;
+}
+
+/* クリアフィックス */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    margin: 0;
+    font-family: "Hannari";
+}
+
+/*背景色*/
+body{
+    background-color:#EEEEEE;
+}
+
+/* --------------------------
+ * ヘッダー
+ * --------------------------
+ */
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Hannari";
+    margin:0;
+    padding:0;
+}
+
+header p span {
+    font-size: 24px;
+    font-weight: bold;
+    margin:0;
+}
+
+header p {
+    font-size: 24px;
+    margin:0;
+    font-family: "Hannari";
+}
+
+.description {
+    margin-bottom: 0px;
+}
+
+
+
+
+/*区切り線*/
+.hr_stripe{
+  background: repeating-linear-gradient(45deg, red , red 10px,  white 10px, white 20px, green 20px, green 30px, white 30px, white 40px);
+  background-color: gray;
+  width: auto;
+  height: 6px;
+  margin: 0;
+}
+
+/*サブタイトル*/
+h2{
+font-size:26px;
+font-family: "Hannari";
+}
+
+
+/*記事*/
+
+.flex{
+    display:flex;
+}
+
+.pr-area {
+    margin-bottom: 10px;
+    width: 600px;
+    margin-top:0;
+}
+
+/* サイドバー */
+.sidebar {
+    float: left;
+    width: 200px;
+    font-family: "Hannari";
+    margin:20px;
+
+}
+
+/* --------------------------
+ * 見出し
+ * --------------------------
+ */
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-top: 2px solid #16a765;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    font-family: "Hannari";
+
+}
+
+/* --------------------------
+ * フッター
+ * --------------------------
+ */
+.footer-left {
+    float: left;
+    width: 300px;
+    margin-left: 40px;
+}
+.footer-right {
+    float: right;
+    width: 600px;
+}
+footer ul li {
+    float: left;
+    margin-bottom: 10px;
+    padding: 0 7px 0 8px;
+    font-size: 11px;
+    border-right: 1px solid #b6b6b6;
+    font-family: "Hannari";
+}
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    margin: 20px 0;
+}
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Hannari";
+}
+.footer-logo {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Hannari";
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*人気記事　タイトル付き（見出しボックス）*/
+.box71{
+margin: 2em auto; /* ボックスの余白 */
+background-color: #fff; /* ボックス背景色 */
+padding: 5em 2em 2em; /* ボックス内側余白 */
+position:relative; /*配置(ここを基準に)*/
+box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+width:300px;/*横幅最大幅 */
+
+}
+
+.box71 .box-title {
+background-color: #A7B4AF; /* タイトル背景色 */
+font-size: 1.4em;/* タイトル文字の大きさ */
+color: #fff; /* タイトル文字色 */
+padding:10px;/*タイトル余白*/
+text-align: center;	/* タイトル中央寄せ */
+position:absolute;	/* 配置(ここを動かす) */
+top:0;	/*上から(0px)に配置 */
+left:0; /*左から(0px)に配置 */
+width:300px;/*横幅最大幅 */
+}
+
+/* メインナビ*/
+
+nav {
+  margin-left:auto; /*メニューを右寄せ*/
+
+  position: relative;
+  width: 600px;
+  height: 50px;
+  border-radius: 16px;
+  font-size: 0;
+  text-align: center;
+
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+
+
+.item-list{
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+}
+
+.item-list h2{
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+  			position:relative;
+			top: 200px;
+			left:200px;
+}
+
+html {
+  background-color: #fefefe;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+.subtle {
+  color: #888;
+  font-size: 12px;
+}
+
+.card-media {
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+  height: 125px;
+  margin-bottom: 25px;
+  transition: all 300ms ease-out;
+  width: 80%;
+}
+
+
+.card-media-object-container {
+  background: none;
+  float: left;
+  height: 100%;
+  width: 35%;
+  position: relative;
+}
+
+.card-media-object {
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+
+
+.card-media:hover .card-media-object:after {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.4) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  opacity: 1;
+}
+
+
+.card-media:hover .card-media-object-social-list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.card-media-body {
+  background-color: #fff;
+  float: left;
+  height: 100%;
+  padding: 12px 15px;
+  position: relative;
+  width: 65%;
+}
+
+.card-media-body-top {
+  display: block;
+}
+
+.card-media-body-top-icons {
+  margin-top: -2px;
+  opacity: 0;
+  transition: all 300ms ease-out;
+  transform: translateY(-5px);
+}
+
+.card-media:hover .card-media-body-top-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.card-media-body-heading {
+  display: block;
+  margin-top: 10px;
+}
+
+

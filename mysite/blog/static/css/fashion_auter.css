@@ -10,6 +10,11 @@
     margin-left: auto;  /* 左側の余白を自動で調整 */
 }
 
+/*基本フォント指定*/
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 /*目次*/
 
 .table_content{

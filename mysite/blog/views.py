@@ -243,3 +243,27 @@ def fashion_watch(request):
 def fashion_suit(request):
     template_name="blog/fashion_suit.html"
     return render(request,template_name)
+
+def fashion_chino(request):
+    template_name="blog/fashion_chino.html"
+    return render(request,template_name)
+
+def fashion_skiny(request):
+    template_name="blog/fashion_skiny.html"
+    return render(request,template_name)
+
+def fashion_tapere(request):
+    template_name="blog/fashion_tapere.html"
+    return render(request,template_name)
+
+def fashion_cago(request):
+    template_name="blog/fashion_cago.html"
+    return render(request,template_name)
+
+def fashion_slacks(request):
+    template_name="blog/fashion_slacks.html"
+    return render(request,template_name)
+
+def fashion_easy(request):
+    template_name="blog/fashion_easy.html"
+    return render(request,template_name)

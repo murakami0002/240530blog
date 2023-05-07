@@ -72,4 +72,10 @@ urlpatterns = [
     path('fashion_socks',views.fashion_socks,name='fashion_socks'),
     path('fashion_watch',views.fashion_watch,name='fashion_watch'),
     path('fashion_suit',views.fashion_suit,name='fashion_suit'),
+    path('fashion_chino',views.fashion_chino,name='fashion_chino'),
+    path('fashion_skiny',views.fashion_skiny,name='fashion_skiny'),
+    path('fashion_tapere',views.fashion_tapere,name='fashion_tapere'),
+    path('fashion_cago',views.fashion_cago,name='fashion_cago'),
+    path('fashion_slacks',views.fashion_slacks,name='fashion_slacks'),
+    path('fashion_easy',views.fashion_easy,name='fashion_easy'),
 ]

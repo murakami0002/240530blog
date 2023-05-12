@@ -267,3 +267,23 @@ def fashion_slacks(request):
 def fashion_easy(request):
     template_name="blog/fashion_easy.html"
     return render(request,template_name)
+
+def fashion_outer_kinds(request):
+    template_name="blog/fashion_outer_kinds.html"
+    return render(request,template_name)
+
+def fashion_jacket_kinds(request):
+    template_name="blog/fashion_jacket_kinds.html"
+    return render(request,template_name)
+
+def fashion_pants_kinds(request):
+    template_name="blog/fashion_pants_kinds.html"
+    return render(request,template_name)
+
+def fashion_tshirt_kinds_neck(request):
+    template_name="blog/fashion_tshirt_kinds_neck.html"
+    return render(request,template_name)
+
+def fashion_swimsuit(request):
+    template_name="blog/fashion_swimsuit.html"
+    return render(request,template_name)

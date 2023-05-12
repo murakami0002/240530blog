@@ -78,4 +78,9 @@ urlpatterns = [
     path('fashion_cago',views.fashion_cago,name='fashion_cago'),
     path('fashion_slacks',views.fashion_slacks,name='fashion_slacks'),
     path('fashion_easy',views.fashion_easy,name='fashion_easy'),
+    path('fashion_outer_kinds',views.fashion_outer_kinds,name='fashion_outer_kinds'),
+    path('fashion_jacket_kinds',views.fashion_jacket_kinds,name='fashion_jacket_kinds'),
+    path('fashion_pants_kinds',views.fashion_pants_kinds,name='fashion_pants_kinds'),
+    path('fashion_tshirt_kinds_neck',views.fashion_tshirt_kinds_neck,name='fashion_tshirt_kinds_neck'),
+    path('fashion_swimsuit',views.fashion_swimsuit,name='fashion_swimsuit'),
 ]

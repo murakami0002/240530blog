@@ -32,6 +32,10 @@ class IndexView(generic.ListView):
     template_name="Work.html"
     return render(request,template_name)"""
 
+def trivia_break(request):
+    template_name="blog/trivia_break.html"
+    return render(request,template_name)
+
 def trivia_greatman(request):
     template_name="blog/trivia_greatman.html"
     return render(request,template_name)
@@ -286,4 +290,8 @@ def fashion_tshirt_kinds_neck(request):
 
 def fashion_swimsuit(request):
     template_name="blog/fashion_swimsuit.html"
+    return render(request,template_name)
+
+def ads(request):
+    template_name="blog/ads.txt"
     return render(request,template_name)

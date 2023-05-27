@@ -164,6 +164,82 @@ def humor_baseball_tsukkomi(request):
     template_name="blog/humor_baseball_tsukkomi.html"
     return render(request,template_name)
 
+def humor_fart(request):
+    template_name="blog/humor_fart.html"
+    return render(request,template_name)
+
+def humor_nosehair(request):
+    template_name="blog/humor_nosehair.html"
+    return render(request,template_name)
+
+def humor_badbreath(request):
+    template_name="blog/humor_badbreath.html"
+    return render(request,template_name)
+
+def humor_bodyodor(request):
+    template_name="blog/humor_bodyodor.html"
+    return render(request,template_name)
+
+def humor_footodor(request):
+    template_name="blog/humor_footodor.html"
+    return render(request,template_name)
+
+def humor_booger(request):
+    template_name="blog/humor_booger.html"
+    return render(request,template_name)
+
+def humor_silent(request):
+    template_name="blog/humor_silent.html"
+    return render(request,template_name)
+
+def humor_boss(request):
+    template_name="blog/humor_boss.html"
+    return render(request,template_name)
+
+def humor_junior(request):
+    template_name="blog/humor_junior.html"
+    return render(request,template_name)
+
+def humor_reunion(request):
+    template_name="blog/humor_reunion.html"
+    return render(request,template_name)
+
+def humor_makeup(request):
+    template_name="blog/humor_makeup.html"
+    return render(request,template_name)
+
+def humor_parent(request):
+    template_name="blog/humor_parent.html"
+    return render(request,template_name)
+
+def humor_friends(request):
+    template_name="blog/humor_friends.html"
+    return render(request,template_name)
+
+def humor_toilet(request):
+    template_name="blog/humor_toilet.html"
+    return render(request,template_name)
+
+def humor_ero(request):
+    template_name="blog/humor_ero.html"
+    return render(request,template_name)
+
+def humor_lame(request):
+    template_name="blog/humor_lame.html"
+    return render(request,template_name)
+
+def humor_damage(request):
+    template_name="blog/humor_damage.html"
+    return render(request,template_name)
+
+def humor_frustrate(request):
+    template_name="blog/humor_frustrate.html"
+    return render(request,template_name)
+
+def humor_which(request):
+    template_name="blog/humor_which.html"
+    return render(request,template_name)
+
 def life_fx(request):
     template_name="blog/life_fx.html"
     return render(request,template_name)

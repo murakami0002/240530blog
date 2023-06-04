@@ -240,6 +240,66 @@ def humor_which(request):
     template_name="blog/humor_which.html"
     return render(request,template_name)
 
+def humor_love(request):
+    template_name="blog/humor_love.html"
+    return render(request,template_name)
+
+def humor_reason(request):
+    template_name="blog/humor_reason.html"
+    return render(request,template_name)
+
+def humor_type(request):
+    template_name="blog/humor_type.html"
+    return render(request,template_name)
+
+def humor_blood(request):
+    template_name="blog/humor_blood.html"
+    return render(request,template_name)
+
+def humor_like(request):
+    template_name="blog/humor_like.html"
+    return render(request,template_name)
+
+def humor_cinema(request):
+    template_name="blog/humor_cinema.html"
+    return render(request,template_name)
+
+def humor_deny(request):
+    template_name="blog/humor_deny.html"
+    return render(request,template_name)
+
+def humor_hobby(request):
+    template_name="blog/humor_hobby.html"
+    return render(request,template_name)
+
+def humor_fetish(request):
+    template_name="blog/humor_fetish.html"
+    return render(request,template_name)
+
+def humor_bye(request):
+    template_name="blog/humor_bye.html"
+    return render(request,template_name)
+
+def humor_late(request):
+    template_name="blog/humor_late.html"
+    return render(request,template_name)
+
+def humor_job(request):
+    template_name="blog/humor_job.html"
+    return render(request,template_name)
+
+def humor_holiday(request):
+    template_name="blog/humor_holiday.html"
+    return render(request,template_name)
+
+def humor_birthplace(request):
+    template_name="blog/humor_birthplace.html"
+    return render(request,template_name)
+
+def humor_dream(request):
+    template_name="blog/humor_dream.html"
+    return render(request,template_name)
+
 def life_fx(request):
     template_name="blog/life_fx.html"
     return render(request,template_name)

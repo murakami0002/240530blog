@@ -300,6 +300,50 @@ def humor_dream(request):
     template_name="blog/humor_dream.html"
     return render(request,template_name)
 
+def humor_deep(request):
+    template_name="blog/humor_deep.html"
+    return render(request,template_name)
+
+def humor_thoughts(request):
+    template_name="blog/humor_thoughts.html"
+    return render(request,template_name)
+
+def humor_stress(request):
+    template_name="blog/humor_stress.html"
+    return render(request,template_name)
+
+def humor_lookup(request):
+    template_name="blog/humor_lookup.html"
+    return render(request,template_name)
+
+def humor_artist(request):
+    template_name="blog/humor_artist.html"
+    return render(request,template_name)
+
+def humor_sports(request):
+    template_name="blog/humor_sports.html"
+    return render(request,template_name)
+
+def humor_flash(request):
+    template_name="blog/humor_flash.html"
+    return render(request,template_name)
+
+def humor_salary1(request):
+    template_name="blog/humor_salary1.html"
+    return render(request,template_name)
+
+def humor_salary2(request):
+    template_name="blog/humor_salary2.html"
+    return render(request,template_name)
+
+def humor_salary3(request):
+    template_name="blog/humor_salary3.html"
+    return render(request,template_name)
+
+def humor_salary4(request):
+    template_name="blog/humor_salary4.html"
+    return render(request,template_name)
+
 def life_fx(request):
     template_name="blog/life_fx.html"
     return render(request,template_name)

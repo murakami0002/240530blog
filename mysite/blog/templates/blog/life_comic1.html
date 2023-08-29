@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/life_master.css?v=23">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="life_summary1">ユーモア小道具<</a><div class="roota">
+        <a href="life_comic1">おすすめ電子書籍サイトTop10</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/suika.jpg'%}">
+        <p>おすすめ<br><br>
+            電子書籍サイトTop10。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                   <p>こんにちは村ちゃんです。今回は読書好きの皆様におすすめ電子書籍サイトランキングTop10をまとめました。
+                   参考にしてください。</p></div>
+            </div>
+        </div>
+
+        <img src="{% static 'media_local/comic.png'%}" width="100%">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+                <h2 class="text2">第1位　楽天kobo</h2>
+                <figure class="image2"><img src="{% static 'media_local/star5.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>楽天ポイントが貯まる</li>
+                    <li>楽天ポイントで購入可能</li>
+                    <li>幅広いジャンルの書籍を取り揃える</li>
+                    <li>4,300冊以上のコミックなどが無料</li>
+                    <li>「楽天学割」で毎週水曜はポイント最大10倍</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>利用できる支払い方法が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第2位　honto</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>マルチデバイス(PC,タプレッド,スマホ)対応</li>
+                    <li>話題の本を知れる「ブックツリー」サービス搭載</li>
+                    <li>17,000冊以上無料</li>
+                    <li>hontoポイント搭載</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>ポイントが適用される提携書店が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第3位　コミックシーモア</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>品揃えが豊富</li>
+                    <li>クーポンやキャンペーンが豊富</li>
+                    <li>無料試し読みが多い</li>
+                    <li>決済方法が豊富</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>無料お試し期間が短い</li>
+                    <li>月額料金割高</li>
+                    <li>読み放題に読みたい書籍が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第4位　めちゃコミック</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>オリジナル作品が多く、多ジャンル</li>
+                    <li>1話ずつ購入可能</li>
+                    <li>決済方法が豊富</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>ポイントが失効される</li>
+                    <li>漫画中心で小説等が少ない</li>
+                    <li>端末に保存できない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第5位　DMM電子書籍</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>無料会員登録で70%OFFクーポンゲット</li>
+                    <li>ポイント還元率が高い</li>
+                    <li>スーパーセールが年3回開催</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>漫画以外の品揃えが少ない</li>
+                    <li>割引金額が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+             <a href="https://px.a8.net/svt/ejp?a8mat=3T47QY+BUADWY+6HW+3SYRPT" rel="nofollow">
+<img border="0" width="728" height="90" alt="" src="https://www22.a8.net/svt/bgt?aid=230304058716&wid=001&eno=01&mid=s00000000842023005000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3T47QY+BUADWY+6HW+3SYRPT" alt="">
+
+            <hr class="cp_hr10"/>
+
+
+            <div class="flex2">
+                <h2 class="text2">第6位　BookLive!</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>サイトが使いやすい</li>
+                    <li>丸ごと読める無料漫画多数</li>
+                    <li>本棚に鍵機能あり</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>Macの専用アプリがない</li>
+                    <li>クーポンの有効期限が短い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第7位　Kindleストア</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>オフライン環境で電子書籍読める</li>
+                    <li>マルチデバイス対応</li>
+                    <li>Kindle専用端末あり</li>
+                    <li>「E-ink」採用</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>専用端末を使いこなすのに慣れが必要</li>
+                    <li>本棚機能が使いにくい</li>
+                    <li>お得感が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第8位　GANMA!(ガンマ)</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>連載中漫画全話無料</li>
+                    <li>マンガ家の応援機能搭載</li>
+                    <li>コミュニティ機能でマンガ好きと交流可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>メジャーなマンガの掲載少ない</li>
+                    <li>完結済みのマンガは有料</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第9位　アクセスBOOKS</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>毎日ポイントが貯まる</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>専用アプリがない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第10位　ebooksjapan</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>急なサービス停止が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>読み放題プランがない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+        <hr class="cp_hr10"/>
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

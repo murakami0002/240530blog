@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=20">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary1">ユーモア語録<</a><div class="roota">
+        <a href="humor_life1">人生を楽しくする方法七選</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>人生を楽しくする<br><br>
+            方法七選。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+ <div class="balloon5">
+        <div class="faceicon">
+            <img src="{% static 'media_local/cat.jpg'%}">
+        </div>
+        <div class="chatting">
+            <div class="says">
+                <p>皆さんこんちには、murachanです。今回は、人生が楽しくない・パッとしないと思い始めた人たちへ「人生を楽しくする方法7選」
+                    をまとめました。せっかくの人生ですので、楽しんで使いきれるよう参考にして下さい。</p>
+            </div>
+        </div>
+    </div>
+
+        <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/1.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">景色を見る。</h2>
+                        <p class="card-description">何かに悩み込むと、そのことしか考えられず柔軟な考え方が出来なくなります。
+                            定期的に家の外の風景、電車からの風景、車からの風景を見る癖をつけましょう。
+                            広い景色を見ることで、色々抱えている課題の1つが実はあまり重要でなかったり無視できたりします。
+                            また、違う視点からも捉えることができ優先順位付け、取捨選択を行うことが出来ます。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/2.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">ルーティンを作る。</h2>
+                        <p class="card-description">人生ほとんど上手く行きません。
+                            そんな中でも何か1つルーティンを作り、1ヵ月や1年と自分の中で期間を決めてやり切りましょう。
+                            やり切ったときには、自分の中での成功体験となり自信になります。
+                            また、継続して努力する癖がつきます。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">成功体験を具体的に想像する。</h2>
+                        <p class="card-description">脳は想像と実体験の区別がつきません。
+                            成功した後の自分の暮らしがどのようになっているか、周りにはどんな人がいるか、
+                            その時は どんな感情かを具体的に想像しましょう。
+                            そうすることで、脳は実体験と勘違いし自分はこういう人間であると自信に満ち溢れることが出来ます。
+                            また、目標に向かうモチベーション維持にもなります。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">映画鑑賞、読書をする。</h2>
+                        <p class="card-description">色々な物語、色々な人の人生を知ることで憧れ、目標、夢が芽生えます。
+                            新しい「なりたい自分」が見つかることで、人生が活性化し明るくなります。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">自分に投資する。</h2>
+                        <p class="card-description">英会話に通う、ボイトレに通う、ジムに通うなど自分の能力UPに投資しましょう。
+                            自分の市場価値を上げましょう。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/6.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">先ずはやってみましょう。</h2>
+                        <p class="card-description">悩むくらいであれば、先ずはやってみましょう。
+                            そのあと、意味があることか判断し取捨選択すればいいです。
+                            やらなきゃ良かったの後悔も人生の経験値となります。</p>
+                    </div>
+                </div>
+            </a>
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

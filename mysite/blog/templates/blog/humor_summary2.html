@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_summary2.css?v=19">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a>
+        <div class="roota"><a href="humor_summary2">ユーモア語録②</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/dictation2.jpg'%}">
+        <p>ユーモア語録(humor dictation)とは・・・<br><br>
+            場の雰囲気を一変させる言霊。<br>圧倒的なワードセンス。<br>その場の支配者となる、ユーモア星人育成場である。</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/soccerball.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, jun 08 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a
+                                href="humor_soccer_tsukkomi1">サッカー中に使えるユーモアなツッコミ集</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/baseball.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Wed 14 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a
+                                href="humor_baseball_tsukkomi1">野球中に使えるユーモアなツッコミ集</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/10.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, Jun 20 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_game">合コンで盛り上がるゲーム5厳選</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/greatman.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sun, Jun 26 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_greatman">偉人達の名言</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+             <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/seiza.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sat, Jul 02 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_seiza1">星座占い</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/fart.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Fri, Jul 08 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_fart1">おならが出ちゃった時のユーモアな発言</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/nosehair.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Thu, Jul 14 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_nosehair1">鼻毛が出ている人に対するユーモアな指摘</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/badbreath.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, Jul 20 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_badbreath1">口臭が臭い人に対するユーモアな指摘</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/bodyodor.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Jul 26 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_bodyodor1">体臭がキツイ人に対するユーモアな指摘</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/footodor.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, Aug 01 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_footodor1">足が臭い人に対するユーモアな指摘</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+        <div class="profile-card">
+            <div class="profile-card__inner">
+                <div class="profile-thumb">
+                    <img src="{% static 'media_local/mei.jpg'%}" alt="" width="50px">
+                </div>
+                <div class="profile-content">
+                    <span class="profile-name">おぶり</span>
+                    <span class="profile-job">家と職場の往復 会社員</span>
+                    <span class="profile-intro">ユーモアな雰囲気大好きな会社員です。外出苦手、家に籠りがちです。ユーモアな世界観に突出したブログ書いてます</span>
+                </div>
+            </div>
+        </div>
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<div class="pager">
+  <ul class="pagination">
+      <li class="pre"><a href="humor_summary1"><span>«</span></a></li>
+      <li><a href="humor_summary1"><span>1</span></a></li>
+      <li><a href="humor_summary2" class="active"><span>2</span></a></li>
+      <li><a href="humor_summary3"><span>3</span></a></li>
+      <li><a href="humor_summary4"><span>4</span></a></li>
+      <li><a href="humor_summary5"><span>5</span></a></li>
+      <li class="next"><a href="humor_summary3"><span>»</span></a></li>
+  </ul>
+  </div>
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

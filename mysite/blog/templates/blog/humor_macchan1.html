@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=22">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary1">ユーモア語録<</a><div class="roota">
+        <a href="humor_macchan1">私が選ぶ松本人志の名言集</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>私が選ぶ<br><br>
+            松本人志の名言集。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+ <div class="balloon5">
+        <div class="faceicon">
+            <img src="{% static 'media_local/cat.jpg'%}">
+        </div>
+        <div class="chatting">
+            <div class="says">
+                 <p>今回は私の尊敬する松本人志の名言をまとめました。面白かっこいいのでぜひ見てください。</p>
+    </div>
+        </div>
+    </div>
+
+        <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/1.png'%}">
+                    <div class="card-box">
+                       <h2 class="card-title">「アホ！その子らも腹いっぱいになったら残すわ！」</h2>
+            <p class="card-description"> 世の中には食べられへん子もおるんやで、残したらいけないと親から言われた際の返し。</li>
+</p></div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/2.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">「モンゴルからの留学生や」</h2>
+            <p class="card-description">→浜田雅功に初めて出会った際に思った言葉。</p><p class="card-description"></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+                    <div class="card-box">
+                         <h2 class="card-title">「100点は無理かもしれん。でもMAXなら出せるやろ」</h2>
+            <p class="card-description">→100点＝全力じゃない</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+                    <div class="card-box">
+                       <h2 class="card-title">「笑う事だけが、人間に許された唯一の特権なんや」</h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+                    <div class="card-box">
+                       <h2 class="card-title">「人生なんて楽しいもんやないんや。だから楽しまなあかんねん」</h2>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/6.png'%}">
+                    <div class="card-box">
+                         <h2 class="card-title">「未完成でも一生懸命やったら伝わるもんやなあ」</h2>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/7.jpg'%}">
+                    <div class="card-box">
+                         <h2 class="card-title">「笑いは0円で作れる」</h2>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

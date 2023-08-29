@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=21">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary2">ユーモア語録<</a><div class="roota">
+        <a href="humor_seiza1">星座性格占い</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>星座性格占い<br><br>
+            <br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+ <div class="balloon5">
+        <div class="faceicon">
+            <img src="{% static 'media_local/cat.jpg'%}">
+        </div>
+        <div class="chatting">
+            <div class="says">
+                <p>皆さんこんちには、murachanです。今回は星座別の性格をまとめてみました。参考にして下さい。</p>
+             </div>
+        </div>
+    </div>
+
+         <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/ohitsuji.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">牡羊座（おひつじ座）3/21~4/19</h2>
+                        <p class="card-description">「勇敢さ」が特徴な星座。リーダーシップがあり衝動的で攻撃的です。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/ousi.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">牡牛座(おうし座）4/20~5/20</h2>
+                        <p class="card-description">「忍耐力」が特徴な星座。これと決めたら持てるもの全てを注ぎ込みます。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/futago.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">双子座（ふたご座）5/21~6/21</h2>
+                        <p class="card-description">「社交性の高さ」が特徴な星座。社交を生き甲斐とする人脈作りの達人</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/kani.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">蟹座（かに座）6/22~7/22</h2>
+                        <p class="card-description">「感受性の高さ」が特徴な星座。気持ちに共感し、気分の浮き沈みを一緒に経験する。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/shishi.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">獅子座（しし座）7/23~8/22</h2>
+                        <p class="card-description">「情の厚さ」が特徴な星座。何を愛するかを他社と共有する。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/otome.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">乙女座（おとめ座）8/23~9/22</h2>
+                        <p class="card-description">「洞察力の高さ」が特徴な星座。合理的な評価を下せる。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/tenbin.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">天秤座（てんびん座）9/23~10/23</h2>
+                        <p class="card-description">「バランスの良さ」が特徴な星座。真の平和と調和を見つけ出す。</p>
+                    </div>
+                </div>
+            </a>
+
+                <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/sasori.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">蠍座（さそり座）10/24~11/22</h2>
+                        <p class="card-description">「情鉄的」が特徴な星座。頭も心も魂もパワフル。</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/ite.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">射手座（いて座）11/23~12/21</h2>
+                        <p class="card-description">「自由な精神」が特徴な星座。探究心が旺盛で、新たな領域や冒険を追い求める。</p>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/yagi.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">山羊座（やぎ座）12/22~1/19</h2>
+                        <p class="card-description">「建設的さ」が特徴な星座。カオスのなかに不変性をもたらす。</p>
+　　　　　　　　　　</div>
+                </div>
+            </a>
+
+             <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/mizugame.jpg'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">水瓶座（みずがめ座）1/20~2/18</h2>
+                        <p class="card-description">「知性」が特徴な星座。頭で分析し、本質を考え抜く。</p>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="card-link" target="_blank">
+                <div class="card pic-image">
+                    <img class="card-image" src="{% static 'media_local/uo.png'%}">
+                    <div class="card-box">
+                        <h2 class="card-title">魚座（うお座）2/19~3/20</h2>
+                        <p class="card-description">「想像力の豊さ」が特徴な星座。豊かな内面世界に恵まれた人</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

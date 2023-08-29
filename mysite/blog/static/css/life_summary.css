@@ -23,6 +23,28 @@
   line-height:6;
 }
 
+
+/* ルートディレクトリ*/
+.root{
+    height:60px;
+    background-color:#F0FFFF;
+    position: relative;
+    text-align:left;
+
+}
+
+.rootp a{
+    color:#A9A9A9;
+    float:left;
+    margin:3px;
+    padding:0px;
+    padding-top:7px;
+}
+
+.roota a{
+color:#333333;
+}
+
 /* クリアフィックス */
 .clearfix:after {
     content: "";

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/life_master.css?v=23">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="life_summary1">ユーモア小道具<</a><div class="roota">
+        <a href="life_fx1">おすすめFX口座開設サイトTOP10</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/suika.jpg'%}">
+        <p>おすすめ<br><br>
+            FX口座開設サイトTOP10。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                   <p>こんにちは村ちゃんです。今回はFXを始める方向けにお勧めサイトを10個まとめました。
+                    参考にしてください。</p></div>
+            </div>
+        </div>
+
+        <img src="{% static 'media_local/fx.jpg'%}" width="100%">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+                <h2 class="text2">第1位　GMOクリック証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star5.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>必要最低資金が低額</li>
+                    <li>手数料・スプレッドが安い</li>
+                    <li>スワップポイントが高い</li>
+                    <li>デスクトップ用アプリが便利で簡単</li>
+                    <li>取引専用の口座が準備出来る</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>強制ロスカット時に手数料が発生する</li>
+                    <li>情報コンテンツが少ない</li>
+                    <li>他社に比べて取引通貨ペアが少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第2位　SBI FXトレード</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>通貨ペア数が最多</li>
+                    <li>株式を担保に現金0円で取引可能</li>
+                    <li>手数料・スプレッドが安い</li>
+                    <li>スマホアプリの分析ツールが豊富</li>
+                    <li>米ドル/円を現引可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>証拠金利維持率が50%(ロスカット時に損害大)</li>
+                    <li>デモトレードがない</li>
+                    <li>自動売買がない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第3位　DMM FX</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>アプリの操作が簡単</li>
+                    <li>デモトレード取引が可能</li>
+                    <li>24時間安心サポート付き</li>
+                    <li>最短1時間で取引開始可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取引通貨ペアが少ない</li>
+                    <li>最低取引単位が10,000単位</li>
+                    <li>スキャルピングの利用不可</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第4位　外為どっとコム</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>スプレッドが業界最狭</li>
+                    <li>キャンペーン金額が高い</li>
+                    <li>セミナー開催あり</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>約定金額が違う、滑りが発生しやすい</li>
+                    <li>他の金融商品を取り扱っていない</li>
+                    <li>スワップポイントが低い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第5位　外貨ex byGMO</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>最低1,000通貨から取引可能</li>
+                    <li>デモ口座を何度でも利用可能</li>
+                    <li>スキャルピングの利用可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>セミナーや情報量が少ない</li>
+                    <li>自動売買がない</li>
+                    <li>アプリが重い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+
+            <div class="flex2">
+                <h2 class="text2">第6位　ヒロセ通商(LION FX)</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>最低1,000通貨から取引可能</li>
+                    <li>取扱通貨ペア数が多い</li>
+                    <li>約定速度が速い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>スプレッドが急に拡大する</li>
+                    <li>スワップポイントが低い</li>
+                    <li>自動売買が出来ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第7位　みんなのFX</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>システムトレードやバイナリーオプション取引が可能</li>
+                    <li>最低1,000通貨から取引可能</li>
+                    <li>スワップポイントが高い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>証拠金維持率が100％(保守的)</li>
+                    <li>約定力が低い</li>
+                    <li>ツールが使いにくい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第8位　外為オンライン</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>チャート機能が充実</li>
+                    <li>セミナーや情報量が豊富</li>
+                    <li>自動売買の利用可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>スプレッドが広い</li>
+                    <li>サポート体制が少ない</li>
+                    <li>特化する強みがない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第9位　松井証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>100円から取引可能</li>
+                    <li>スプレッドが小さい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>デモトレードがない</li>
+                    <li>スワップポイントが高くない</li>
+                    <li>取引通貨ペアが少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第10位　LIGHT FX</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>約定力が高い</li>
+                    <li>少額取引可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>デモトレードがない</li>
+                    <li>マーケット情報が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

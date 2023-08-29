@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/life_master.css?v=23">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="life_summary1">ユーモア小道具<</a><div class="roota">
+        <a href="life_kabu1">おすすめ株証券会社Top10</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/suika.jpg'%}">
+        <p>おすすめ<br><br>
+            株証券会社Top10。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                   <p>こんにちは村ちゃんです。今回は株投資を始める方向けにお勧め証券会社Top10をまとめました。
+                    参考にしてください。</p></div>
+            </div>
+        </div>
+
+        <img src="{% static 'media_local/kabu.jpg'%}" width="100%">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+                <h2 class="text2">第1位　SBI証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star5.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>個人取引シェアNo.1</li>
+                    <li>商品ラインナップがトップクラス</li>
+                    <li>世界各国に投資可能</li>
+                    <li>ポイント投資など投資サービス網羅</li>
+                    <li>NISA口座も取扱豊富</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>アプリ通信障害が多い</li>
+                    <li>問合せに対するサービスが悪い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第2位　楽天証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>投資しながら楽天ポイントが貯まる</li>
+                    <li>高性能な株アプリ所有</li>
+                    <li>楽天会員なら口座開設カンタン</li>
+                    <li>取引スピードが速い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li></li>
+                    <li>問合せに対するサービスが悪い</li>
+                    <li>口座開設の時間が掛かる</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第3位　auカブコム証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>専門性の高い分析ツール所有</li>
+                    <li>取引手数料が無料になる対象豊富</li>
+                    <li>積立投資が100円から可能</li>
+                    <li>スクリーニング機能が充実</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li></li>
+                    <li>アプリの表示画面が見難い</li>
+                    <li>電話対応サービスが悪い</li>
+                    <li>手数料が高め</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第4位　松井証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>1日信用取引がデイトレーダー向け</li>
+                    <li>投信の信託報酬一部がキャッシュバック</li>
+                    <li>手数料が最安値</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>アプリのフリーズがしばしば発生</li>
+                    <li>アプリが使いづらい</li>
+                    <li>ブラウザサイトが見難い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第5位　マネックス証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>米国株取扱4500銘柄超え</li>
+                    <li>公平なIPO抽選ルール採用</li>
+                    <li>ブラウザサイトが見やすい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>反応スピードが遅い</li>
+                    <li>出金に時間がかかる</li>
+                    <li>スマホツールでの情報量が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+
+            <div class="flex2">
+                <h2 class="text2">第6位　岡三オンライン</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>指標、ランキング、スクリーニングが充実</li>
+                    <li>機能面、情報面で使いやすさ高め</li>
+                    <li>話題銘柄の事前情報展開あり</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>手数料が高め</li>
+                    <li>電話が繋がりにくい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第7位　GMOクリック証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>最安クラスの手数料</li>
+                    <li>スマホアプリが使いやすい</li>
+                    <li>株、FX、ETF間のお金の移動が早い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>電話対応が悪い</li>
+                    <li>出金手続きが面倒</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第8位　SBIネオトレード証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>IPOの事前入金不要</li>
+                    <li>手数料が安め</li>
+                    <li>取引ツールが日々改善される</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>IPOの取扱が少ない</li>
+                    <li>FXの取扱がない</li>
+                    <li>投資信託の本数が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第9位　DMM証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>初心者向けの簡単モード搭載</li>
+                    <li>DMMポイントが取引に応じて加算</li>
+                    <li>米国株を信用取引の担保に出来る</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>IPOが当たりにくい</li>
+                    <li>米国株の取引銘柄が少ない</li>
+                    <li>単元未満株の取扱不可</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第10位　立花証券</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>無料閲覧出来る情報多数</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取扱銘柄が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+        <hr class="cp_hr10"/>
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

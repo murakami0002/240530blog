@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=20">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary6">ユーモア語録<</a><div class="roota">
+        <a href="humor_salary13">こいつ仕事出来るなのビジネス用語選手権③</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>こいつ仕事出来るなの<br><br>
+            ビジネス用語選手権③。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+ <div class="balloon5">
+        <div class="faceicon">
+            <img src="{% static 'media_local/cat.jpg'%}">
+        </div>
+        <div class="chatting">
+            <div class="says">
+                <p>皆さんこんちには、murachanです。こいつ仕事出来るなと思われるビジネス用語選手権をまとめました。
+言うことは一丁前なmurachanが考えた回答を参考にしてください。</p></div>
+        </div>
+    </div>
+
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/1.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「プロトタイプはこちらです。(製品やサービスの初期の試作品や模型）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/2.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「マーケットニッチはこちらです。(定のニーズや需要を持つ限られた顧客セグメントや市場）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+ <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">「パフォーマンス評価の結果ですが、(個人やチームの業績や能力を評価するプロセス）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">「バリュープロポジションはこのように考えております。(顧客に提供する価値や利点)」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">「リーン思考を突き詰めた結果、(無駄を削減し効率を高める手法や哲学）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/6.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「近年のインフレーションによって（価格や物価の上昇を指す経済用語）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+              <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/7.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">「マーケットインサイトが足りていない(マーケットや顧客に関する深い理解や洞察）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/8.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「ネットワーキングを意識しましょう。（人との関係構築やコミュニケーションを通じてビジネスの機会や情報を得ること）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/9.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「フレキシブルな考え(変化や適応に対応しやすい柔軟性を持つこと）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+
+
+             <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/10.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「こちらがアクションプランとなります。(特定の目標や課題に対して実施すべき具体的な行動や手順の計画）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+
+             <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/11.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">「クライアントからの連絡(商品やサービスを購入する顧客や顧客企業のこと）」</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

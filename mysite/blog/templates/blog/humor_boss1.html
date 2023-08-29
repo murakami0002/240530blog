@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=20">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary3">ユーモア語録<</a><div class="roota">
+        <a href="humor_boss1">嫌いな上司とのユーモアな接し方</a></div>
+    </div>
+    </div>
+
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>嫌いな上司との<br><br>
+            ユーモアな接し方。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+ <div class="balloon5">
+        <div class="faceicon">
+            <img src="{% static 'media_local/cat.jpg'%}">
+        </div>
+        <div class="chatting">
+            <div class="says">
+               <p>皆さんこんちには、murachanです。嫌いな上司とのユーモアな接し方をまとめました。
+ユーモアさには定評があるmurachanが考えた言葉を参考にしてください。</p> </div>
+        </div>
+    </div>
+
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/1.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">コミュニケーションの改善: 上司とのコミュニケーションを改善することは重要です。適切なタイミングで会話をすることや、意見や質問を積極的にすることで、お互いの理解を深めることができます。また、相手の意見やフィードバックにも耳を傾け、共感や理解を示すことが大切です。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/2.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">プロフェッショナリズムを保つ: 嫌いな上司に対しても、プロフェッショナルな態度を保つことが重要です。感情的にならず、冷静に対応しましょう。仕事に集中し、自分の役割や責任を果たすことで、上司との関係を改善できる可能性があります。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+ <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">ポジティブな姿勢を持つ: ネガティブな感情や態度ではなく、ポジティブな姿勢を持つことが大切です。困難な状況にも前向きに取り組み、解決策を模索することで、上司に対しても好印象を与えることができます。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">チームの一員として協力する: 上司との関係改善には、協力する姿勢が重要です。チームメンバーとして、他の同僚とのコラボレーションやサポートに積極的に参加しましょう。良好なチームの雰囲気や成果に貢献することで、上司との関係も改善されるかもしれません。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">心の余裕を持つ: 上司との関係改善には時間がかかる場合もあります。自分自身に対しても余裕を持ち、ストレスを溜めすぎないようにしましょう。バランスの取れた生活やストレス発散の方法を見つけることで、心の安定を保つことができます。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/6.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">エスケープルームのようなチームビルディング活動に参加する: チームビルディング活動は、メンバー同士の協力やコミュニケーションを促進するための活動です。参加することで、上司との関係を改善するチャンスが生まれるかもしれません。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+              <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/7.jpg'%}">
+        <div class="card-box">
+            <h2 class="card-title">サポートを提供する: 上司がプロジェクトや業務に取り組んでいる際に、手助けやサポートを積極的に提供してみましょう。自分の能力や専門知識を活かして上司を支えることで、関係改善の一助になるかもしれません。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/8.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">コーヒーブレイクやランチの時間を活用する: 上司との距離感を縮めるために、コーヒーブレイクやランチの時間を活用してコミュニケーションを図ることも有効です。普段の業務の話題だけでなく、趣味や興味のあるトピックについても話してみましょう</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+            <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/9.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">上司に対してフィードバックを提供する: 嫌いな上司に対して直接的なフィードバックを提供することで、改善の機会を与えることができます。ただし、フィードバックをする際は具体的かつ建設的な内容にすることが重要です。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>       <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/10.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">上司の強みを活かす: 嫌いな上司でも、必ず何らかの強みや得意な分野があります。その強みを認め、尊重しましょう。上司の得意な領域で協力することで、関係を改善する可能性があります。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+
+             <a href="#" class="card-link" target="_blank">
+    <div class="card pic-image">
+        <img class="card-image" src="{% static 'media_local/11.png'%}">
+        <div class="card-box">
+            <h2 class="card-title">オープンなコミュニケーションを心掛ける: 上司とのコミュニケーションでは、率直かつオープンな姿勢を持つことが重要です。問題や不満がある場合は、適切なタイミングで上司と話し合い、解決策を共に模索しましょう。</h2>
+            <p class="card-description"></p>
+        </div>
+    </div>
+</a>
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/trivia_master.css?v=28">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="trivia_summary1">ユーモア豆知識<</a><div class="roota">
+        <a href="trivia_soccer_goal1">サッカーゴール数ランキング</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/trivia.png'%}">
+        <p>サッカーゴール数<br><br>
+            ランキング。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                     <p>皆さんこんちには、murachanです。今回はポテトチップス人気ランキングをまとめました。</p>
+            </div>
+            </div>
+        </div>
+
+
+
+
+<div class="profile">
+<h2>Top10</h2>
+  <img class="profile__img" src="{% static 'media_local/deak.jpg'%}">
+  <div class="profile__name">ダーク・フェレンツ</div>
+  <div class="profile__answer">576ゴール</div>
+  <div class="profile__desc">ハンガリー出身、フェレンツヴァロシュ</div>
+</div>
+
+
+<div class="profile">
+<h2>Top9</h2>
+  <img class="profile__img" src="{% static 'media_local/lewandowski.jpg'%}">
+  <div class="profile__name">ロベルト・レヴァンドフスキ</div>
+  <div class="profile__answer">603ゴール</div>
+  <div class="profile__desc">ポーランド出身、バイエルンミュンヘン</div>
+</div>
+
+
+<div class="profile">
+<h2>Top8</h2>
+  <img class="profile__img" src="{% static 'media_local/eusebio.jpg'%}">
+  <div class="profile__name">エウセビオ</div>
+  <div class="profile__answer">623ゴール</div>
+  <div class="profile__desc">ポルトガル出身、ベンフィカ</div>
+</div>
+
+
+<div class="profile">
+<h2>Top7</h2>
+  <img class="profile__img" src="{% static 'media_local/gerd.jpg'%}">
+  <div class="profile__name">ゲルト・ミュラー</div>
+  <div class="profile__answer">735ゴール</div>
+  <div class="profile__desc">ドイツ出身、バイエルンミュンヘン</div>
+</div>
+
+
+<div class="profile">
+<h2>Top6</h2>
+  <img class="profile__img" src="{% static 'media_local/puskas.jpg'%}">
+  <div class="profile__name">フェレンツ・プスカシュ</div>
+  <div class="profile__answer">746ゴール</div>
+  <div class="profile__desc">ハンガリー出身、レアルマドリード</div>
+</div>
+
+
+<div class="profile">
+<h2>Top5</h2>
+  <img class="profile__img" src="{% static 'media_local/messi.jpg'%}">
+  <div class="profile__name">リオネル・メッシ</div>
+  <div class="profile__answer">759ゴール</div>
+  <div class="profile__desc">アルゼンチン出身、バルセロナ</div>
+</div>
+
+
+<div class="profile">
+<h2>Top4</h2>
+  <img class="profile__img" src="{% static 'media_local/pele.jpg'%}">
+  <div class="profile__name">ペレ</div>
+  <div class="profile__answer">767ゴール</div>
+  <div class="profile__desc">ブラジル出身、サントスFC</div>
+</div>
+
+
+<div class="profile">
+<h2>Top3</h2>
+  <img class="profile__img" src="{% static 'media_local/romario.jpg'%}">
+  <div class="profile__name">ロマーリオ</div>
+  <div class="profile__answer">772ゴール</div>
+  <div class="profile__desc">ブラジル出身、バルセロナ</div>
+</div>
+
+
+<div class="profile">
+<h2>Top2</h2>
+  <img class="profile__img" src="{% static 'media_local/bican.jpg'%}">
+  <div class="profile__name">ヨーゼフ・ビカン</div>
+  <div class="profile__answer">805ゴール</div>
+  <div class="profile__desc">オーストリア出身、VZヴィートコヴィツェ</div>
+</div>
+
+
+<div class="profile">
+<h2>Top1</h2>
+  <img class="profile__img" src="{% static 'media_local/cristiano.jpg'%}">
+  <div class="profile__name">クリスティアーノ・ロナウド</div>
+  <div class="profile__answer">807ゴール</div>
+  <div class="profile__desc">ポルトガル出身、レアルマドリード</div>
+</div>
+
+    </div>
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

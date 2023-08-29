@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_master.css?v=21">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="humor_summary1">ユーモア語録<</a><div class="roota">
+        <a href="humor_yourself1">ユーモアな第二人称の呼び方</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/disc.jpg'%}">
+        <p>ユーモアな<br><br>
+            第二人称の呼び方。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                    <p>皆さんこんちには、murachanです。ユーモアある第二人称の呼び方をまとめてみました。ユーモアさには自信がある
+                        murachanが考えた呼び方を参考にしてください。合コンなどでお勧めです。※嫌われても自己責任です</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/1.png'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「貴様」</h2>
+                    <p class="card-description">例：貴様は何飲む？</p></div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/2.png'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「おぬし」</h2>
+                    <p class="card-description">例：おぬしは何食べたい？</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/3.jpg'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「小僧」</h2>
+                    <p class="card-description">例：小僧は何が好き？</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/4.jpg'%}">
+                <div class="card-box">
+                    <h2 class="card-title">ベルサイユ」</h2>
+                    <p class="card-description">例：ベルサイユは何のスポーツが好きなん？</p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/5.jpg'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「上様」</h2>
+                    <p class="card-description">例：上様は何頼まれますか？</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/6.png'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「あんさん」</h2>
+                    <p class="card-description">例：あんさんの名前は何て言うの？</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/7.jpg'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「そなた」</h2>
+                    <p class="card-description">例：そなたは何処出身？</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-link" target="_blank">
+            <div class="card pic-image">
+                <img class="card-image" src="{% static 'media_local/8.png'%}">
+                <div class="card-box">
+                    <h2 class="card-title">「そのほう」</h2>
+                    <p class="card-description">例：そのほうは何て申すのだ？</p>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

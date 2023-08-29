@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/life_master.css?v=23">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="life_summary1">ユーモア小道具<</a><div class="roota">
+        <a href="life_coin1">おすすめ仮想通貨取引所Top10</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/suika.jpg'%}">
+        <p>おすすめ<br><br>
+            仮想通貨取引所Top10。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                    <p>こんにちは村ちゃんです。今回は仮想通貨を始める方向けにお勧め仮想通貨取引所Top10をまとめました。
+                    参考にしてください。</p></div>
+            </div>
+        </div>
+
+        <img src="{% static 'media_local/coin.jpg'%}" width="100%">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第1位　Coincheck</h2>
+                <figure class="image2"><img src="{% static 'media_local/star5.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>取扱暗号資産の種類が豊富</li>
+                    <li>日本円から暗号資産を直接購入できる</li>
+                    <li>カスタマーサポートが手厚い</li>
+                    <li>アプリが使いやすい</li>
+                    <li>初心者でも使いやすい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>レバレッジ取引不可</li>
+                    <li>仮想通貨送金時に手数料かかる</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第2位　DMM Bitcoin</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>アルトコインのレバレッジ取引対応</li>
+                    <li>DMMグループ傘下でセキュリティが高い</li>
+                    <li>入出金、送金の手数料無料</li>
+                    <li>少額取引可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取引所形式での取引不可</li>
+                    <li>仮想通貨の出金に時間がかかる</li>
+                    <li>仮想通貨取引以外のサービスが少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第3位　bitFlyer</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>レバレッジ取引可能</li>
+                    <li>セキュリティ対策万全</li>
+                    <li>出資者が大手</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>レバレッジ取引がビットコインのみ</li>
+                    <li>取扱銘柄が少ない</li>
+                    <li>アルトコインの出金に手数料がかかる</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第4位　GMOコイン</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>500円から積立ができる</li>
+                    <li>NFT銘柄の取扱あり</li>
+                    <li>初心者向け、中級者向けでスマホアプリ使い分け可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>最低出金額が割高</li>
+                    <li>スプレッドが大きい</li>
+                    <li>メンテナンスが多い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第5位　bitbank</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>リアルタイム入金可能</li>
+                    <li>rエンディングで利益狙える</li>
+                    <li>取引高が多く安定している</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>初心者には取引し辛い</li>
+                    <li>レバレッジ取引不可</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+
+            <div class="flex2">
+                <h2 class="text2">第6位　LINE BITMAX</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>独自の仮想通貨LINKを売買できる</li>
+                    <li>LINE Payで入出金できる</li>
+                    <li>1円相当の小額から取引できる</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取扱通貨が少ない</li>
+                    <li>PC非対応</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第7位　BITPoint</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>現物取引の手数料無料</li>
+                    <li>国内唯一の取引通貨あり</li>
+                    <li>使いやすい取引ツールが充実</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取引通貨が少ない</li>
+                    <li>取引が成立しにくい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第8位　SBI VC トレード</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>SBIグループが運営している安心感</li>
+                    <li>レバレッジ取引可能</li>
+                    <li>取引ツールが使いやすい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取扱銘柄が少ない</li>
+                    <li>スプレッドが広い</li>
+                    <li>昼間に定期メンテナンスがある</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第9位　楽天ウォレット</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>楽天グループの安心感がある</li>
+                    <li>楽天銀行を使用しているとメリットあり</li>
+                    <li>ポイントで仮想通貨購入可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取扱通貨が少ない</li>
+                    <li>取引所取引が出来ない</li>
+                    <li>メンテナンス時間が長い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第10位　マネックスビットコイン</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>下落相場でも利益狙える</li>
+                    <li>アプリからの注文可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>取扱銘柄が少ない</li>
+                    <li>アプリからしか取引できない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+
+        <a href="//af.moshimo.com/af/c/click?a_id=3959891&p_id=1&pc_id=1&pl_id=1318" rel="nofollow"
+           referrerpolicy="no-referrer-when-downgrade">（自由テキスト　※もしもアフィリエイトトップへのリンク）</a><img
+            src="//i.moshimo.com/af/i/impression?a_id=3959891&p_id=1&pc_id=1&pl_id=1318" width="1" height="1"
+            style="border:none;">
+
+        <a href="//af.moshimo.com/af/c/click?a_id=3959891&p_id=1&pc_id=1&pl_id=1328" rel="nofollow"
+           referrerpolicy="no-referrer-when-downgrade"><img src="//image.moshimo.com/af-img/0001/000000001328.jpg"
+                                                            width="468" height="60" style="border:none;"></a><img
+            src="//i.moshimo.com/af/i/impression?a_id=3959891&p_id=1&pc_id=1&pl_id=1328" width="1" height="1"
+            style="border:none;">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第3位　Googleアドセンス</h2>
+            <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+        </div>
+
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>講師のプロフィールが詳細に記載されている</li>
+                <li>料金が割安</li>
+                <li>年中無休、多忙な方にもおすすめ</li>
+                <li>ネイティブ講師在籍</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第4位　afb</h2>
+            <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+        </div>
+
+
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>通常の報酬額に加えて、＋10%の報酬額が成果報酬として設定されている</li>
+                <li>アフィリエイトを深く学べるコンテンツがある。</li>
+                <li>人気サイトになると専属の担当者がつく</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第5位　バリューマコース</h2>
+            <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+        </div>
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>信頼と実績を誇る国内最初のASP</li>
+                <li>独占案件が多く、ここでしか掲載出来ない広告多数</li>
+                <li>「平均承認率」や「EPC」などの情報が全会員に対して開示されている</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+        <hr class="cp_hr10"/>
+
+
+        <div class="flex2">
+            <h2 class="text2">第6位　アクセスレコード</h2>
+            <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+        </div>
+
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>広告を掲載するだけで報酬が発生する案件がある</li>
+                <li>金融系・ゲーム系の広告に強い</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第7位　Amazonアソシエイト</h2>
+            <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+        </div>
+
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>1億以上あるAmazonの商品でアフィリエイト収益を得ることができる</li>
+                <li>紹介した商品以外の物が売れても、リファラー1日以内であれば報酬を得ることができる</li>
+                <li>報酬は最大で購入商品の10%</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+            <h2 class="text2">第8位　楽天アフィリエイト</h2>
+            <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+        </div>
+
+        <div class="blackboard-box">
+            <ul>
+                <p>GOODポイント</p>
+                <li>30日間のアシストがきくので、クリックされた数日後の購入でも報酬が貰える</li>
+                <li>基本的に報酬はポイントでの支払い</li>
+            </ul>
+            <div class="chalk1"></div>
+            <div class="chalk2"></div>
+        </div>
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

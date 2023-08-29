@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_summary2.css?v=19">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a>
+        <div class="roota"><a href="humor_summary6">ユーモア語録⑥</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/dictation2.jpg'%}">
+        <p>ユーモア語録(humor dictation)とは・・・<br><br>
+            場の雰囲気を一変させる言霊。<br>圧倒的なワードセンス。<br>その場の支配者となる、ユーモア星人育成場である。</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/deep.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Thu, Feb 02 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_deep1">深くてユーモア溢れる言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/thoughts.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, Feb 08 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_thoughts1">映画の感想聞かれた時にユーモア溢れる感想選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+             <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/stress.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Feb 14 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_stress1">相手をイラつかせたい時のユーモア溢れる言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/lookup.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, Feb 20 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_lookup1">人生うまく行かない時に元気が出るユーモア溢れる言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+             <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/artist.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sun, Feb 26 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_artist1">好きなアーティストを聞かれた時にユーモア溢れる回答選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/sports.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sat, Mar 04 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_sports1">好きなスポーツを聞かれた時にユーモア溢れる回答選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/flash.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Fri, Mar 10 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_flash1">かっこよく聞こえるユーモア溢れるセリフ選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/salary1.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Thu, Mar 16 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_salary11">こいつ仕事出来るなと思われるビジネス用語選手権①</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/salary2.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, Mar 22 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_salary12">こいつ仕事出来るなと思われるビジネス用語選手権②</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/salary3.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Mar 28 2023</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_salary13">こいつ仕事出来るなと思われるビジネス用語選手権③</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+        <div class="profile-card">
+            <div class="profile-card__inner">
+                <div class="profile-thumb">
+                    <img src="{% static 'media_local/mei.jpg'%}" alt="" width="50px">
+                </div>
+                <div class="profile-content">
+                    <span class="profile-name">おぶり</span>
+                    <span class="profile-job">家と職場の往復 会社員</span>
+                    <span class="profile-intro">ユーモアな雰囲気大好きな会社員です。外出苦手、家に籠りがちです。ユーモアな世界観に突出したブログ書いてます</span>
+                </div>
+            </div>
+        </div>
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+             <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<div class="pager">
+  <ul class="pagination">
+      <li class="pre"><a href="humor_summary5"><span>«</span></a></li>
+      <li><a href="humor_summary4" ><span>4</span></a></li>
+      <li><a href="humor_summary5"><span>5</span></a></li>
+      <li><a href="humor_summary6" class="active"><span>6</span></a></li>
+      <li class="next"><a href="humor_summary6"><span>»</span></a></li>
+  </ul>
+  </div>
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

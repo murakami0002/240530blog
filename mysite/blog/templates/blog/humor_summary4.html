@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/humor_summary2.css?v=19">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a>
+        <div class="roota"><a href="humor_summary4">ユーモア語録④</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/dictation2.jpg'%}">
+        <p>ユーモア語録(humor dictation)とは・・・<br><br>
+            場の雰囲気を一変させる言霊。<br>圧倒的なワードセンス。<br>その場の支配者となる、ユーモア星人育成場である。</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/lame.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Thu, Oct 06 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_lame1">ダサい言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/cool.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, Oct 12 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_cool1">キザな言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+             <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/damage.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Oct 18 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_damage1">地味に傷つく言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/frustrate.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, Oct 24 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_frustrate1">イラっとする言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/which.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sun, Oct 30 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_which1">喜んでいいのか分からない言葉選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/love.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Sat, Nov 05 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_love1">好きな人へLINEを送る最初の言葉ユーモア選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/reason.png);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Fri, Nov 11 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_reason1">休みたい時のユーモアな理由選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/type.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Thu, Nov 17 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_type1">好きな人のタイプが無難でユーモア溢れる回答選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+             <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/blood.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Wed, Nov 23 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_blood1">血液型聞かれた時の返しがユーモア溢れる回答選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/like.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Tue, Nov 29 2022</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="humor_like1">好きな女優聞かれた時の返しがユーモア溢れる回答選手権</a></span>
+                        <div class="card-media-body-supporting-bottom">
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+        <div class="profile-card">
+            <div class="profile-card__inner">
+                <div class="profile-thumb">
+                    <img src="{% static 'media_local/mei.jpg'%}" alt="" width="50px">
+                </div>
+                <div class="profile-content">
+                    <span class="profile-name">おぶり</span>
+                    <span class="profile-job">家と職場の往復 会社員</span>
+                    <span class="profile-intro">ユーモアな雰囲気大好きな会社員です。外出苦手、家に籠りがちです。ユーモアな世界観に突出したブログ書いてます</span>
+                </div>
+            </div>
+        </div>
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<div class="pager">
+  <ul class="pagination">
+      <li class="pre"><a href="humor_summary3"><span>«</span></a></li>
+      <li><a href="humor_summary2" ><span>2</span></a></li>
+      <li><a href="humor_summary3"><span>3</span></a></li>
+      <li><a href="humor_summary4" class="active"><span>4</span></a></li>
+      <li><a href="humor_summary5"><span>5</span></a></li>
+      <li><a href="humor_summary6"><span>6</span></a></li>
+      <li class="next"><a href="humor_summary5"><span>»</span></a></li>
+  </ul>
+  </div>
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

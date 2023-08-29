@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/life_master.css?v=23">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a><a href="life_summary1">ユーモア小道具<</a><div class="roota">
+        <a href="life_english1">おすすめオンライン英会話Top10</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/suika.jpg'%}">
+        <p>おすすめ<br><br>
+            オンライン英会話Top10。<br><br>の巻</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="balloon5">
+            <div class="faceicon">
+                <img src="{% static 'media_local/cat.jpg'%}">
+            </div>
+            <div class="chatting">
+                <div class="says">
+                   <p>こんにちは村ちゃんです。今回は英会話を始める方向けにお勧めオンライン英会話Top10をまとめました。
+                    参考にしてください。</p></div>
+            </div>
+        </div>
+
+        <img src="{% static 'media_local/english.jpg'%}" width="100%">
+
+        <hr class="cp_hr10"/>
+
+        <div class="flex2">
+                <h2 class="text2">第1位　QQ English</h2>
+                <figure class="image2"><img src="{% static 'media_local/star5.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>全講師が国際資格「TESOL」所持</li>
+                    <li>英語力を伸ばす質の高いレッスン</li>
+                    <li>5分前から予約可能</li>
+                    <li>レッスンの回線安定</li>
+                    <li>手厚いサポート</li>
+                    <li>教材が豊富</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>料金が高め</li>
+                    <li>講師がフィリピン人のみ</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+            <a href="https://px.a8.net/svt/ejp?a8mat=3T6BPV+18NJ5E+4HHM+62ENL" rel="nofollow">
+                <img border="0" width="468" height="120" alt=""
+                     src="https://www23.a8.net/svt/bgt?aid=230402515075&wid=001&eno=01&mid=s00000020929001019000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3T6BPV+18NJ5E+4HHM+62ENL" alt="">
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第2位　産経オンライン英会話</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>教育ISO取得</li>
+                    <li>講師採用・研修の水準が高い</li>
+                    <li>料金が割安</li>
+                    <li>週末しか受講出来ない人にもおすすめ</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>通信状態が不安定</li>
+                    <li>レッスンが単調</li>
+                    <li>フリートーク少なめ</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <a href="https://px.a8.net/svt/ejp?a8mat=3T6BPV+1RPEIA+2TV8+HY069" rel="nofollow">
+                <img border="0" width="468" height="60" alt=""
+                     src="https://www24.a8.net/svt/bgt?aid=230402515107&wid=001&eno=01&mid=s00000013202003014000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3T6BPV+1RPEIA+2TV8+HY069" alt="">
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第3位　エイゴックス</h2>
+                <figure class="image2"><img src="{% static 'media_local/star4.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>講師のプロフィールが詳細に記載されている</li>
+                    <li>料金が割安</li>
+                    <li>年中無休、多忙な方にもおすすめ</li>
+                    <li>ネイティブ講師在籍</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>料金が高め</li>
+                    <li>一部有料の教材あり</li>
+                    <li>レッスンキャンセルは早めの対応必要</li>
+                    <li>休会制度なし</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <a href="https://px.a8.net/svt/ejp?a8mat=3T6BPV+1OQ8HE+2TKO+64C3L" rel="nofollow">
+                <img border="0" width="468" height="60" alt=""
+                     src="https://www23.a8.net/svt/bgt?aid=230402515102&wid=001&eno=01&mid=s00000013164001028000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3T6BPV+1OQ8HE+2TKO+64C3L" alt="">
+
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第4位　レアジョブ英会話</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>業界最大手の安心感</li>
+                    <li>料金格安</li>
+                    <li>教材の種類豊富</li>
+                    <li>レッスン画面がみやすい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>ネイティブ講師がいない</li>
+                    <li>早朝・深夜のレッスン不可</li>
+                    <li>複数予約不可</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第5位　ネイティブキャンプ</h2>
+                <figure class="image2"><img src="{% static 'media_local/star3.png'%}" width="20%"></figure>
+            </div>
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>100ヵ国以上の講師在籍</li>
+                    <li>料金が割安</li>
+                    <li>カランメソッド可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>確認と反復が多め</li>
+                    <li>予約は有料</li>
+                    <li>5分遅刻で欠席扱い</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+
+            <div class="flex2">
+                <h2 class="text2">第6位　hanaso</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>顧客満足度高い</li>
+                    <li>フレンドリーな講師多め</li>
+                    <li>料金体制が明確</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>フィリピン人講師しかいない</li>
+                    <li>講師の数が少なめ</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <a href="https://px.a8.net/svt/ejp?a8mat=3T6BPU+FVK5IQ+231E+6LP3L" rel="nofollow">
+                <img border="0" width="350" height="160" alt=""
+                     src="https://www27.a8.net/svt/bgt?aid=230402514960&wid=001&eno=01&mid=s00000009725001109000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3T6BPU+FVK5IQ+231E+6LP3L" alt="">
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第7位　Weblio英会話</h2>
+                <figure class="image2"><img src="{% static 'media_local/star2.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>料金が割安</li>
+                    <li>予約が取りやすい</li>
+                    <li>教材がシンプルでわかりやすい</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>キャンセル保証が弱め</li>
+                    <li>講師はフィリピン人のみ</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第8位　DMM英会話</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>117ヵ国の講師在籍</li>
+                    <li>24時間レッスン可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>スカイプが必要</li>
+                    <li>講師の人気が偏る</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第9位　ワールドトーク</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>TOEIC・英検やビジネス英語にも対応</li>
+                    <li>24時間いつでもレッスン可能</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>教材の質が低い</li>
+                    <li>ポイントの繰越不可</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <hr class="cp_hr10"/>
+
+            <div class="flex2">
+                <h2 class="text2">第10位　トークモア</h2>
+                <figure class="image2"><img src="{% static 'media_local/star1.png'%}" width="20%"></figure>
+            </div>
+
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>GOODポイント</p>
+                    <li>講師の9割以上が日本人バイリンガル</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+            <div class="blackboard-box">
+                <ul>
+                    <p>BADポイント</p>
+                    <li>オリジナル教材が少ない</li>
+                </ul>
+                <div class="chalk1"></div>
+                <div class="chalk2"></div>
+            </div>
+
+        <hr class="cp_hr10"/>
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                    <div class="text">
+                        <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                    </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

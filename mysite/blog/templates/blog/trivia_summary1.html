@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    　<title>ユーモアな館</title>
+    <link rel="stylesheet" href="/static/css/trivia_summary1.css?v=4">
+
+</head>
+
+<body>
+
+<!--▽▽ヘッダー▽▽-->
+<header class="header">
+
+    <!--▽▽ヘッダーロゴ▽▽-->
+    <div class="logo">
+        <a href="{% url 'blog:index' %}">ユーモアな館</a>
+    </div>
+    <!--△△ヘッダーロゴ△△-->
+
+    <!--▽▽ヘッダーリスト▽▽-->
+    <nav>
+        <ul>
+            <li><a href="humor_summary1">ユーモア語録</a></li>
+            <li><a href="life_summary1">ユーモア小道具</a></li>
+            <li><a href="trivia_summary1">ユーモア豆知識</a></li>
+            <li><a href="fashion_summary1">ユーモア身嗜み</a></li>
+        </ul>
+    </nav>
+    <!--△△ヘッダーリスト△△-->
+
+</header>
+
+
+<!--ルートディレクトリ-->
+<div class="root">
+    <div class="rootp">
+        <a href="{% url 'blog:index' %}">Home<</a>
+        <div class="roota"><a href="trivia_summary1">ユーモア豆知識</a></div>
+    </div>
+    </div>
+
+<!--メイン画像-->
+
+<div class="globalNavigation">
+    <div class="main-img">
+        <img src="{% static 'media_local/school.jpg'%}">
+        <p>ユーモア豆知識(humor trivia)とは・・・<br><br>
+            自動走行型図書館。<br>エッセンシャルは茶目っ気。<br>その場の誰よりも雑学を備えるユーモア人間道場である。</p>
+    </div>
+</div>
+
+
+<!--△△記事△△-->
+<main>
+
+    <div class="content">
+
+        <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/rich.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_rich1">世界の金持ちランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/comedian.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_comedian1">芸人年収ランキング</a></span>
+                    </div>
+                </div>
+
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/sport.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_athlete_rich1">スポーツ選手金持ちランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/soccer.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_soccer_goal1">サッカーゴール数ランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/homerun.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_baseball_homerun1">ホームラン数ランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/potatochips.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_potatochips1">ポテトチップス人気ランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/world.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_population1">世界の人工ランキング</a></span>
+                    </div>
+                </div>
+
+                <div class="card-media">
+                    <!-- media container -->
+                    <div class="card-media-object-container">
+                        <div class="card-media-object"
+                             style="background-image: url(../static/media_local/breaking.jpg);"></div>
+                    </div>
+                    <!-- body container -->
+                    <div class="card-media-body">
+                        <div class="card-media-body-top">
+                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                            </div>
+                        </div>
+                        <span class="card-media-body-heading"><a href="trivia_break">ブレイキングダウン出場者プロフィールまとめ</a></span>
+                    </div>
+                </div>
+
+
+
+
+    </div>
+
+
+    <!--△△右側サイドバー△△-->
+    <div class="ad">
+
+        <!--自己紹介-->
+        <div class="profile-card">
+            <div class="profile-card__inner">
+                <div class="profile-thumb">
+                    <img src="{% static 'media_local/mei.jpg'%}" alt="" width="50px">
+                </div>
+                <div class="profile-content">
+                    <span class="profile-name">おぶり</span>
+                    <span class="profile-job">家と職場の往復 会社員</span>
+                    <span class="profile-intro">ユーモアな雰囲気大好きな会社員です。外出苦手、家に籠りがちです。ユーモアな世界観に突出したブログ書いてます</span>
+                </div>
+            </div>
+        </div>
+
+        <!--人気記事-->
+        <div class="sidebar">
+            <h2>人気記事</h2>
+            <div class="popular-articles">
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/nosehair.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_nosehair">鼻毛が出ている人に対するユーモアな指摘</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/hobby.png'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_hobby">趣味を聞かれた時のユーモア溢れる回答</a>
+                     </div>
+                </div>
+
+                <div class="flex">
+                    <div class="image"><img src="{% static 'media_local/cinema.jpg'%}" alt=""></div>
+                     <div class="text">
+                         <a href="humor_cinema">好きな映画聞かれた時の返しがユーモア溢れる回答選手権</a>
+                     </div>
+                </div>
+
+                <!-- 追加の人気記事をここに追加 -->
+            </div>
+        </div>
+
+
+        <!--タグ-->
+        <div class="tag">
+            <h2>タグ一覧</h2>
+            <a href="#">お仕事</a>
+            <a href="#">お酒</a>
+            <a href="#">お笑い</a>
+            <a href="#">お友達</a>
+            <a href="#">お金</a>
+            <a href="#">モテモテ</a>
+            <a href="#">身嗜み</a>
+            <a href="#">心の健康</a>
+            <a href="#">定石</a>
+        </div>
+
+
+    </div>
+</main>
+
+
+<div class="pager">
+  <ul class="pagination">
+      <li class="pre"><a href="fashion_summary1"><span>«</span></a></li>
+      <li><a href="fashion_summary1" class="active"><span>1</span></a></li>
+      <li class="next"><a href="fashion_summary1"><span>»</span></a></li>
+  </ul>
+  </div>
+
+<footer class="footer">
+    <p class="copyright">ユーモア溢れる世界を作りたい　byむらちゃん</p>
+
+</footer>
+
+</body>

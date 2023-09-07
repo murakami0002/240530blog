@@ -86,7 +86,7 @@ a {
     width:500px;
 }
 
-.main-img p{
+.main-img h1{
         position: absolute;
         top: 200px;
         left: 410px;
@@ -764,6 +764,37 @@ color:#222222;
 word-break: break-all;
 
 }
+
+
+/* 広告*/
+.sidebarx {
+  width:100%;
+  background-color: #CEF9DC;
+
+}
+
+.sidebarx h2{
+margin-bottom:10px;
+font-size:20px;
+color: #444444;
+}
+
+.popular-articlesx a{
+  padding:0;
+  margin:0;
+  text-align:left;
+text-align: center;	/* タイトル中央寄せ */
+ display: inline;
+}
+
+.popular-articlesx img{
+  padding:0;
+  margin:-5px;
+  text-align:left;
+text-align: center;	/* タイトル中央寄せ */
+ display: inline;
+}
+
 
 
 /* タグ　*/

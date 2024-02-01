@@ -34,11 +34,12 @@ body{
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 nav {
   margin: 0 0 0 auto;
+  font-size:1.3vw;
 }
 
 ul {
@@ -62,6 +63,7 @@ a {
     background-color:#F0FFFF;
     position: relative;
     text-align:left;
+    font-size:1.7vw;
 
 }
 
@@ -81,13 +83,10 @@ color:#333333;
 
 /* メイン画像*/
 
-
-
 .globalNavigation{
     height:600px;
     color: #fff;
     background-color: ;
-    position: relative;
 
 }
 
@@ -96,25 +95,23 @@ color:#333333;
     height:100%;
     padding:0px;
     text-align: center;
-
+    position: relative;
 }
 
 .main-img img{
-    position: absolute;
-    top: 5px;
-    left: 450px;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    margin-top:0px;
-    width:600px;
+    position: relative;
 }
 
 .main-img h1{
-        position: absolute;
-        top: 110px;
-        left: 600px;
-        font-size:30px;
-        color:#222222;
-        writing-mode: vertical-rl;
+  position: absolute;
+  left: 260px;
+  top: 50px;
+  font-size:2.8vw;
+  color:#222222;
+  writing-mode: vertical-rl;
       }
 
 /*吹き出し*/
@@ -181,27 +178,28 @@ color:#333333;
 }
 
 .image2 {
-  width: 50%; /*画像サイズ指定*/
-  margin-left: 5px;
-  margin-bottom:5px;
-  padding: 0;
-
+  object-fit: cover;
 }
 
+.image2 img{
+  width: 80%;
+  height: 90%;
+  margin-top:-10px;
+}
+
+  h2{
+  height:60px;
+  }
+
  .text2{
-  position:relative;
-  text-align:left;
-  left:200px;
-  width:500px;
-  padding: 0;
+  text-align:center;
   font-size: 1.5em;/* フォントサイズ */
   font-weight: bold;/* フォント太さ */
-  padding-top: .2em;
+  padding-top: .8em;
   padding-bottom: .2em;
-  padding-left: .5em;
-  padding-right: .700em;
-  margin-bottom: .2em;
-  margin:auto;
+  padding-left: .10em;
+  padding-right: .7em;
+  margin:0 auto;
   background-color: #b7efdf;/* 背景色 */
   border-bottom: 5px solid #395049;/* 下線 */
   color: #334842;/* フォント色 */
@@ -249,27 +247,25 @@ color:#333333;
 
 .chalk1{
   display: block;
-
   border: solid 3px #fff;
   width: 15px;
   height: 3px;
   border-radius: 3px 2px 0 2px;
   position: absolute;
   top: 280px;
-  left: 400px;
+  left: 100px;
 
 }
 
 .chalk2{
   display: block;
-
   border: solid 3px #ffee58;
   width: 20px;
   height: 3px;
   border-radius: 6px 2px 0 2px;
   position: absolute;
   top: 280px;
-  left: 430px;
+  left: 130px;
 }
 
 
@@ -503,11 +499,21 @@ justify-content: space-evenly;
 
 
 /* サイドバー*/
+@media screen and (min-width: 900px) {
+
 .ad{
     text-align: center;
     background-color: ;
     color: #fff;
     width: 250px;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+.ad{
+display: none;
+}
 }
 
 

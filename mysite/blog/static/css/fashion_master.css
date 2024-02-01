@@ -34,11 +34,12 @@ body{
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 nav {
   margin: 0 0 0 auto;
+    font-size:1.3vw;
 }
 
 ul {
@@ -62,6 +63,7 @@ a {
     background-color:#F0FFFF;
     position: relative;
     text-align:left;
+    font-size:1.7vw;
 
 }
 
@@ -86,7 +88,6 @@ color:#333333;
     height:600px;
     color: #fff;
     background-color: ;
-    position: relative;
 
 }
 
@@ -95,25 +96,24 @@ color:#333333;
     height:100%;
     padding:0px;
     text-align: center;
+    position: relative;
 
 }
 
 .main-img img{
-    position: absolute;
-    top: 50px;
-    left: 400px;
-    height: auto;
-    margin-top:0px;
-    width:500px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .main-img h1{
-        position: absolute;
-        top: 200px;
-        left: 410px;
-        font-size:30px;
-        color:#222222;
-        writing-mode: vertical-rl;
+  position: absolute;
+  left: 260px;
+  top: 50px;
+  font-size:2.8vw;
+  color:#222222;
+  writing-mode: vertical-rl;
       }
 
 /*目次*/
@@ -180,6 +180,7 @@ color:#333333;
   margin:auto;
   height:300px;
   font-size:14px;
+  text-align:  center;
 }
 
 .wTable tr td:nth-child(1) {
@@ -485,13 +486,22 @@ main{
 
 
 /* サイドバー*/
+@media screen and (min-width: 900px) {
+
 .ad{
     text-align: center;
     background-color: ;
     color: #fff;
     width: 250px;
 }
+}
 
+@media screen and (max-width: 900px) {
+
+.ad{
+display: none;
+}
+}
 
 
 /* 見出し*/

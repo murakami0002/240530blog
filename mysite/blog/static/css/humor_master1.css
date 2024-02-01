@@ -34,12 +34,11 @@ body{
 }
 
 .logo {
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 nav {
   margin: 0 0 0 auto;
-  font-size:1.3vw;
 }
 
 ul {
@@ -57,22 +56,39 @@ a {
   padding: 0 20px;
 }
 
+/* ルートディレクトリ*/
+.root{
+    height:60px;
+    background-color:#F0FFFF;
+    position: relative;
+    text-align:left;
+
+}
+
+.rootp a{
+    color:#A9A9A9;
+    float:left;
+    margin:3px;
+    padding:0px;
+    padding-top:7px;
+}
+
+.roota a{
+color:#333333;
+}
+
+
+
 
 /* メイン画像*/
 
 
 
 .globalNavigation{
-    height:750px;
+    height:600px;
     color: #fff;
     background-color: ;
-
-}
-
-.main-img img{
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
+    position: relative;
 
 }
 
@@ -80,19 +96,82 @@ a {
     width:100%;
     height:100%;
     padding:0px;
-    position: relative;
-    text-align: left;
+    text-align: center;
+
 }
 
-.main-img p{
+.main-img img{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    height: auto;
+    margin-top:0px;
+    width:600px;
+}
+
+.main-img h1{
         position: absolute;
-        top:50px;
-        left:50px;
-        font-size:3vw;
-        padding:0;
-        margin:0;
-        color:#0066CC;
+        top: 200px;
+        left: 410px;
+        font-size:30px;
+        color:#222222;
+        writing-mode: vertical-rl;
       }
+
+/*吹き出し*/
+
+.balloon5 {
+  width: 80%;
+  margin: 1.5em 0;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top:30px;
+  margin-bottom:30px;
+
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  font-size:18px;
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+  text-align:left;
+}
 
 /* メイン記事*/
 main{
@@ -109,8 +188,88 @@ main{
     background-color: #eee;
     text-align: center;
     margin: 0 10px 0 10px;
-    max-width:100%;
+    max-width:100%;}
+
+/* まとめ記事*/
+.card-media {
+  float:left;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+  height: 125px;
+  margin: 20px;
+  transition: all 300ms ease-out;
+  width: 45%;
+  flex-wrap:wrap;
 }
+
+.subtle{
+    color:#A9A9A9;
+}
+
+.card-media-object-container {
+  background: none;
+  float: left;
+  height: 100%;
+  width: 35%;
+  position: relative;
+}
+
+.card-media-object {
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+
+.card-media:hover .card-media-object:after {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.4) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  opacity: 1;
+}
+
+
+.card-media:hover .card-media-object-social-list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-media-body {
+  background-color: #fff;
+  float: left;
+  height: 100%;
+  padding: 12px 15px;
+  position: relative;
+  width: 65%;
+}
+
+.card-media-body-top {
+  display: block;
+}
+
+.card-media-body-top-icons {
+  margin-top: -2px;
+  opacity: 0;
+  transition: all 300ms ease-out;
+  transform: translateY(-5px);
+}
+
+.card-media:hover .card-media-body-top-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-media-body-heading {
+  display: block;
+  margin-top: 10px;
+
+}
+
+.card-media-body-heading a {
+  line-height:normal;
+}
+
 
 /* --------------------------
  * PRエリア
@@ -244,22 +403,68 @@ justify-content: space-evenly;
 
 
 /* サイドバー*/
-
-@media screen and (min-width: 900px) {
-
 .ad{
     text-align: center;
     background-color: ;
     color: #fff;
     width: 250px;
 }
+
+
+
+/* 見出し*/
+.card {
+    display: flex;
+    width:100%;
+    align-items: center;
+    padding: 1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 20px #ccc;
+    transition: 0.5s;
 }
 
-@media screen and (max-width: 900px) {
-
-.ad{
-display: none;
+.card-image {
+    width: 15%;
+    height: 100px;
+    object-fit: contain;
+    margin:10px;
 }
+
+
+.card-box {
+    padding-left: 1rem;
+    text-align:left;
+    width:80%;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width:100px:
+}
+
+.card-description {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.card-link {
+    color: #333;
+    text-decoration: none;
+    margin:10px;
+}
+
+.card-link:hover .card {
+    box-shadow: 0 5px 10px #ccc;
+}
+
+.card-link h2{
+    font-size:16px;
 }
 
 
@@ -432,6 +637,36 @@ word-break: break-all;
 }
 
 
+/* 広告*/
+.sidebarx {
+  width:100%;
+  background-color: #CEF9DC;
+
+}
+
+.sidebarx h2{
+margin-bottom:10px;
+font-size:20px;
+color: #444444;
+}
+
+.popular-articlesx a{
+  padding:0;
+  margin:0;
+  text-align:left;
+text-align: center;	/* タイトル中央寄せ */
+ display: inline;
+}
+
+.popular-articlesx img{
+  padding:0;
+  margin:-5px;
+  text-align:left;
+text-align: center;	/* タイトル中央寄せ */
+ display: inline;
+}
+
+
 /* タグ　*/
 .tag{
     background-color:#C2EEFF;
@@ -459,3 +694,81 @@ color: #444444;
 .tag a:before {
 	content: "#";
 }
+
+/* ページャー　*/
+
+.pager .pagination {
+  text-align: center;
+}
+
+.pager .pagination li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+
+.pager .pagination li a{
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display:table;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.pager .pagination li a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+  color: #fff;
+  background: #DEB887;
+}
+
+@media only screen and (max-width: 767px){
+  .pager .pagination li{
+    display: none;
+  }
+
+  .pager .pagination li.pre,
+  .pager .pagination li.next{
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre a,
+  .pager .pagination li.next a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre span::after{
+    content: "　前の10件へ";
+  }
+
+  .pager .pagination li.next span::before{
+    content: "次の10件へ　";
+  }
+
+}
+
+
+
